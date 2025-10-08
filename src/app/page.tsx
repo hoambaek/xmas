@@ -38,7 +38,7 @@ export default function Home() {
             별을 따라서
           </h1>
           <p className="text-lg md:text-xl text-center text-[#d4af37] mt-4 tracking-wide drop-shadow-lg font-extralight">
-            Following the Star
+            장덕동성당 중고등부 성탄절 무대공연
           </p>
         </motion.div>
       </motion.div>
@@ -256,7 +256,7 @@ export default function Home() {
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
-            2장: 첫 번째 시험 - 폭풍
+            2장: 폭풍
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
             서로를 감싸 안은 따뜻함
@@ -352,7 +352,7 @@ export default function Home() {
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
-            3장: 두 번째 시험 - 마을
+            3장: 마을
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
             진심이 만든 작은 기적
@@ -509,7 +509,7 @@ export default function Home() {
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
-            4장: 세 번째 시험 - 절망
+            4장: 절망
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
             플룻 선율에 담긴 위로
