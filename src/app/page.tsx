@@ -1267,7 +1267,7 @@ export default function Home() {
                   <p className="text-[#d4af37] font-medium mb-2">⚠️ 핵심 포인트</p>
                   <p>
                     • <strong>4장 플룻 독주</strong>가 극의 감정적 클라이맥스 → 가장 집중적으로 연습<br/>
-                    • 영상과 라이브 음악의 동기화가 성공의 핵심<br/>
+                    • 영상과 사운드의 분위기 그림자극에 어울리게 연출 필요<br/>
                     • 피날레는 관객에게 남는 마지막 인상 → 완벽한 준비 필수
                   </p>
                 </div>
