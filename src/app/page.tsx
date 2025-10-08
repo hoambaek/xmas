@@ -29,7 +29,7 @@ export default function Home() {
         />
         <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black/80 via-black/50 to-transparent pointer-events-none" />
         <motion.div 
-          className="absolute top-32 md:bottom-64 left-0 right-0 px-6"
+          className="absolute top-32 md:top-auto md:bottom-64 left-0 right-0 px-6"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
