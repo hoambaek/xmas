@@ -34,7 +34,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-center text-white tracking-wider drop-shadow-2xl" style={{ fontFamily: "'YeogiOttaeJalnan', sans-serif" }}>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-normal text-center text-white tracking-wider drop-shadow-2xl" style={{ fontFamily: "'HsBombaram21', sans-serif" }}>
             별을 따라서
           </h1>
           <p className="text-lg md:text-xl text-center text-[#d4af37] mt-4 tracking-wide drop-shadow-lg font-extralight">

@@ -3,10 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* JalnanOTF Font - 제목용 */
+/* HSBombaram21 Font - 제목용 */
 @font-face {
-  font-family: 'YeogiOttaeJalnan';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-family: 'HsBombaram21';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/HSBombaram21-Regular.woff2') format('woff2');
   font-weight: normal;
   font-display: swap;
 }
