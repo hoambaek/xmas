@@ -6,11 +6,66 @@ import { motion } from "motion/react";
 
 export default function Home() {
   const [expandedSections, setExpandedSections] = useState<string[]>([]);
+  const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
 
   const toggleSection = (id: string) => {
     setExpandedSections(prev => 
       prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
     );
+  };
+
+  const handleCharacterClick = (character: string) => {
+    setSelectedCharacter(selectedCharacter === character ? null : character);
+  };
+
+  const characters = [
+    { id: "발토", name: "발토", color: "#f5d576" },
+    { id: "카스퍼", name: "카스퍼", color: "#8ab4f8" },
+    { id: "밀로", name: "밀로", color: "#81c995" },
+    { id: "해설", name: "해설", color: "#9aa0a6" },
+    { id: "마을사람1", name: "마을 사람 1", color: "#ee8b60" },
+    { id: "마을사람2", name: "마을 사람 2", color: "#ee8b60" },
+    { id: "마을사람3", name: "마을 사람 3", color: "#ee8b60" },
+    { id: "노파", name: "노파", color: "#c58af9" },
+  ];
+
+  // 캐릭터별 색상 매핑
+  const getCharacterColor = (text: string) => {
+    if (text.includes("발토")) return { id: "발토", color: "#f5d576" };
+    if (text.includes("카스퍼")) return { id: "카스퍼", color: "#8ab4f8" };
+    if (text.includes("밀로")) return { id: "밀로", color: "#81c995" };
+    if (text.includes("해설")) return { id: "해설", color: "#9aa0a6" };
+    if (text.includes("마을 사람 1") || text.includes("마을사람1")) return { id: "마을사람1", color: "#ee8b60" };
+    if (text.includes("마을 사람 2") || text.includes("마을사람2")) return { id: "마을사람2", color: "#ee8b60" };
+    if (text.includes("마을 사람 3") || text.includes("마을사람3")) return { id: "마을사람3", color: "#ee8b60" };
+    if (text.includes("노파")) return { id: "노파", color: "#c58af9" };
+    return null;
+  };
+
+  // 대사 하이라이트 스타일 헬퍼
+  const getDialogueClass = (characterId: string) => {
+    if (selectedCharacter === characterId) {
+      return "transition-all duration-300 rounded p-3";
+    }
+    if (selectedCharacter) {
+      return "opacity-30 transition-all duration-300";
+    }
+    return "transition-all duration-300";
+  };
+
+  const getDialogueInlineStyle = (characterId: string) => {
+    const char = characters.find(c => c.id === characterId);
+    if (!char) return {};
+    
+    if (selectedCharacter === characterId) {
+      return {
+        backgroundColor: `${char.color}20`,
+        borderWidth: "2px",
+        borderStyle: "solid",
+        borderColor: char.color,
+      };
+    }
+    return {};
   };
 
   return (
@@ -43,6 +98,45 @@ export default function Home() {
             장덕동성당 중고등부 성탄절 무대공연
           </p>
         </motion.div>
+      </motion.div>
+
+      {/* 등장인물 섹션 */}
+      <motion.div 
+        className="px-4 py-8 md:px-24 bg-gradient-to-b from-black to-[#0a0a0a]"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium">등장인물</h2>
+        <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
+          {characters.map((character) => (
+            <button
+              key={character.id}
+              onClick={() => handleCharacterClick(character.id)}
+              className={`px-4 py-2 rounded-full transition-all duration-300 font-medium ${
+                selectedCharacter === character.id
+                  ? "scale-110 shadow-lg"
+                  : "hover:scale-105"
+              }`}
+              style={{
+                backgroundColor: selectedCharacter === character.id ? character.color : "transparent",
+                borderColor: character.color,
+                borderWidth: "2px",
+                color: selectedCharacter === character.id ? "#000" : character.color,
+              }}
+            >
+              {character.name}
+            </button>
+          ))}
+          {selectedCharacter && (
+            <button
+              onClick={() => setSelectedCharacter(null)}
+              className="px-4 py-2 rounded-full bg-[#333] text-white hover:bg-[#444] transition-all duration-300 font-medium"
+            >
+              전체 보기
+            </button>
+          )}
+        </div>
       </motion.div>
 
       {/* Content */}
@@ -198,7 +292,7 @@ export default function Home() {
             세 그림자가 서로를 발견하고 놀란다. 잠시 경계
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (밝게, 하지만 어색하게):</p>
             <p className="text-[#ddd]">"어... 안녕? 너희도 저 별 보고 온 거야?"</p>
           </div>
@@ -207,12 +301,12 @@ export default function Home() {
             카스퍼가 고개를 끄덕인다. 경계는 풀지 않고
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
             <p className="text-[#ddd]">"별의 위치가... 이상해. 천문학적으로."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토:</p>
             <p className="text-[#ddd]">"천문학? 나 그런 거 몰라. 그냥... 가고 싶었어."</p>
           </div>
@@ -221,7 +315,7 @@ export default function Home() {
             밀로는 말없이 별을 가리킨다. 플룻을 들고
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (밀로에게):</p>
             <p className="text-[#ddd]">"너는? 말 안 해?"</p>
           </div>
@@ -230,12 +324,12 @@ export default function Home() {
             밀로가 고개를 젓는다. 플룻을 조금 들어 보인다
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
             <p className="text-[#ddd]">"혼자 가기엔 위험해. 함께 가는 게..." 잠시 망설이다 "...합리적이야."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (웃으며):</p>
             <p className="text-[#ddd]">"그래, 합리적. 좋아." 손을 내민다 "같이 가자."</p>
           </div>
@@ -289,7 +383,7 @@ export default function Home() {
             무대가 어두워진다. 바람 소리, 격렬한 그림자 움직임<br/>세 아이의 그림자가 폭풍에 휘청인다
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (소리치며):</p>
             <p className="text-[#ddd]">"안 돼... 너무 추워!"</p>
           </div>
@@ -298,12 +392,12 @@ export default function Home() {
             발토의 그림자가 쓰러진다
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (다가가며):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (다가가며):</p>
             <p className="text-[#ddd]">"일어나! 여기서 멈추면 죽어!"</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
             <p className="text-[#ddd]">"몰라... 엄마가 그리워... 나 혼자야... 혼자라고..."</p>
           </div>
@@ -312,8 +406,8 @@ export default function Home() {
             밀로가 조용히 자신의 옷을 벗어 발토에게 덮어준다
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (놀라며):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (놀라며):</p>
             <p className="text-[#ddd]">"야! 미쳤어? 넌 얼어 죽을 거야!"</p>
           </div>
 
@@ -321,13 +415,13 @@ export default function Home() {
             밀로가 고개를 젓고 카스퍼의 손을 잡아 발토에게 이끈다<br/>세 그림자가 서로를 감싼다. 격렬한 움직임에서 천천히 하나의 큰 그림자로
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 목소리):</p>
             <p className="text-[#ddd]">"따뜻해..."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (작게):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (작게):</p>
             <p className="text-[#ddd]">"...우린 혼자가 아니야."</p>
           </div>
 
@@ -335,7 +429,7 @@ export default function Home() {
             폭풍이 점점 잦아든다. 별빛이 다시 보인다
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며, 웃으며):</p>
             <p className="text-[#ddd]">"다시... 가볼까?"</p>
           </div>
@@ -385,13 +479,13 @@ export default function Home() {
             어두운 마을. 위협적인 그림자들이 사방에서 나타난다
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (창을 든 그림자):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (창을 든 그림자):</p>
             <p className="text-[#ddd]">"거기 서!"</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
             <p className="text-[#ddd]">"낯선 놈들이야! 도둑인가?"</p>
           </div>
 
@@ -399,13 +493,13 @@ export default function Home() {
             세 아이가 움찔한다
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (손을 들며):</p>
             <p className="text-[#ddd]">"아니에요! 우린 그냥 지나가려고..."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">마을 사람 3:</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람3")}`} style={getDialogueInlineStyle("마을사람3")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 3:</p>
             <p className="text-[#ddd]">"한밤중에? 믿을 수 없어!"</p>
           </div>
 
@@ -413,13 +507,13 @@ export default function Home() {
             마을 사람들이 점점 다가온다. 긴장
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (앞으로 나서며):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (앞으로 나서며):</p>
             <p className="text-[#ddd]">"우린 학자들이에요! 저 별을 연구..."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (비웃으며):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (비웃으며):</p>
             <p className="text-[#ddd]">"별? 말도 안 돼!"</p>
           </div>
 
@@ -427,8 +521,8 @@ export default function Home() {
             밀로가 갑자기 앞으로 나선다. 모두가 멈춘다
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">밀로 (작지만 분명하게):</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (작지만 분명하게):</p>
             <p className="text-[#ddd]">"...왕이요."</p>
           </div>
 
@@ -436,8 +530,8 @@ export default function Home() {
             침묵
           </div>
 
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
             <p className="text-[#ddd]">"뭐?"</p>
           </div>
 
