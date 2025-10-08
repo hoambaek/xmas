@@ -981,6 +981,77 @@ export default function Home() {
             연출 노트
           </h2>
 
+          {/* 기획의도 */}
+          <div className="mb-4">
+            <button
+              onClick={() => toggleSection("concept-notes")}
+              className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
+            >
+              <span>기획의도</span>
+              <span className={`transform transition-transform ${expandedSection === "concept-notes" ? "rotate-180" : ""}`}>
+                ▼
+              </span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                expandedSection === "concept-notes" ? "max-h-[2000px] mt-4" : "max-h-0"
+              }`}
+            >
+              <div className="text-[#b0b0b0] leading-relaxed space-y-6">
+                <div>
+                  <h4 className="text-lg text-[#d4af37] mb-3 font-medium">작품의 출발점</h4>
+                  <p className="text-sm leading-loose">
+                    전통적으로 동방박사는 나이 든 현자로 그려지지만, 이 작품은 그들을 <span className="text-[#d4af37]">13-15세 세 아이</span>로 재해석했습니다. 
+                    신앙의 여정이 나이나 지혜가 아닌 <span className="text-[#d4af37]">순수한 갈망과 용기</span>에서 시작된다는 메시지를 담았습니다.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg text-[#d4af37] mb-3 font-medium">그림자극이라는 형식</h4>
+                  <p className="text-sm leading-loose">
+                    빛과 어둠, 형태와 움직임만으로 이야기를 전달하는 절제된 비주얼은 감정의 순도를 높이고 관객의 상상력을 자극합니다. 
+                    그림자는 누구나 될 수 있기에 보편성을 획득하며, 학생들도 부담 없이 진정성 있게 연기할 수 있습니다.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg text-[#d4af37] mb-3 font-medium">세 아이, 현대 청소년의 거울</h4>
+                  <div className="space-y-3 text-sm">
+                    <p><span className="text-[#d4af37] font-medium">발토 (15세)</span> - 상실의 슬픔을 밝음 뒤에 숨기는 아이. 진짜 감정을 드러내는 용기를 배웁니다.</p>
+                    <p><span className="text-[#d4af37] font-medium">카스퍼 (14세)</span> - 모든 것을 증명하려는 회의주의자. 증명할 수 없는 것의 가치를 발견합니다.</p>
+                    <p><span className="text-[#d4af37] font-medium">밀로 (13세)</span> - 트라우마로 말을 잃었지만 플룻으로 소통. 말보다 깊은 위로의 힘을 보여줍니다.</p>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-lg text-[#d4af37] mb-3 font-medium">핵심 메시지</h4>
+                  <p className="text-sm leading-loose mb-3">
+                    <span className="text-[#d4af37]">"신은 멀리 있지 않았어요. 우리 안에 있었어요."</span>
+                  </p>
+                  <p className="text-sm leading-loose">
+                    세 아이가 발견한 것은 베들레헴의 기적이 아닌, 폭풍 속 서로를 감싸 안을 때의 따뜻함, 
+                    진심이 통했을 때 받은 빵, 위로의 플룻 선율이었습니다. 신성은 거창한 곳이 아니라 <span className="text-[#d4af37]">일상의 사랑과 연대</span> 속에 있습니다.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="text-lg text-[#d4af37] mb-3 font-medium">제작 방식</h4>
+                  <p className="text-sm leading-loose">
+                    학생들의 목소리를 선녹음 후 그림자 연기를 촬영합니다. 자신의 목소리로 캐릭터를 만들어가며, 
+                    반복 촬영으로 완성도를 높입니다. 기본 그림자 촬영 후 영상편집으로 배경과 디테일을 보완합니다.
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-[#333]">
+                  <p className="text-sm leading-loose italic text-[#888]">
+                    T.S. 엘리엇의 《동방 박사들의 여정》에서 영감을 받아, 여정의 낭만이 아닌 실제적인 고난과 의심, 
+                    그 속에서 발견하는 서로 안의 빛을 그립니다. 2000년 전 이야기를 21세기 청소년의 언어로 재해석한 작품입니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* 캐릭터 재설정 */}
           <div className="mb-4">
             <button
