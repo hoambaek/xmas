@@ -47,7 +47,7 @@ export default function Home() {
       <div className="px-6 py-12 md:px-24">
         {/* 프롤로그 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -63,98 +63,98 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             세 아이의 시작
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+          
+          <motion.div 
+            className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            무대는 완전한 어둠. 천천히 별 하나가 떠오른다
+          </motion.div>
+          
+          <motion.p 
+            className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            해설자 (따뜻하고 이야기하듯): "이건 아주 오래전 이야기예요. 세 명의 아이가 있었어요. 서로 다른 곳에서 온..."
+          </motion.p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            첫 번째 그림자, 발토가 천천히 등장
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "발토. 열다섯 살. 병으로 가족을 잃었죠. 그래서 항상 웃었어요. 울면 더 슬플까봐."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            발토의 그림자가 하늘을 올려다본다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "어느 날 밤, 이상한 별을 봤어요. '엄마가 저기 있을까?' 생각했죠."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            두 번째 그림자, 카스퍼가 책을 들고 등장
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "카스퍼. 열네 살. 학자의 아들이었어요. 머리는 좋았지만... 신을 믿지 않았죠. 증명할 수 없으니까."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            카스퍼가 별을 보고 두루마리를 펼친다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "그런데 그 별을 보는 순간... 가슴이 뛰었어요. 이유는 몰랐지만."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 번째 그림자, 밀로가 천천히 등장. 플룻을 들고 있다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "밀로. 열세 살. 가장 어렸어요. 전쟁 때문에 집을 잃었고, 말을 잃었죠. 무서웠거든요. 말하는 게."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 별을 보고 걸음을 멈춘다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "하지만 플룻만은 손에서 놓지 않았어요. 아버지가 만들어주신... 마지막 선물이었거든요."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 플룻을 가슴에 안는다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "그 별을 보는 순간... 뭔가 말해야 할 것 같았어요."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 중앙에서 만난다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "그렇게... 세 아이가 만났어요. 별 아래서."
+          </p>
         </motion.div>
-        
-        <motion.div 
-          className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          무대는 완전한 어둠. 천천히 별 하나가 떠오른다
-        </motion.div>
-        
-        <motion.p 
-          className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]"
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-        >
-          해설자 (따뜻하고 이야기하듯): "이건 아주 오래전 이야기예요. 세 명의 아이가 있었어요. 서로 다른 곳에서 온..."
-        </motion.p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          첫 번째 그림자, 발토가 천천히 등장
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "발토. 열다섯 살. 병으로 가족을 잃었죠. 그래서 항상 웃었어요. 울면 더 슬플까봐."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          발토의 그림자가 하늘을 올려다본다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "어느 날 밤, 이상한 별을 봤어요. '엄마가 저기 있을까?' 생각했죠."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          두 번째 그림자, 카스퍼가 책을 들고 등장
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "카스퍼. 열네 살. 학자의 아들이었어요. 머리는 좋았지만... 신을 믿지 않았죠. 증명할 수 없으니까."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          카스퍼가 별을 보고 두루마리를 펼친다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "그런데 그 별을 보는 순간... 가슴이 뛰었어요. 이유는 몰랐지만."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 번째 그림자, 밀로가 천천히 등장. 플룻을 들고 있다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "밀로. 열세 살. 가장 어렸어요. 전쟁 때문에 집을 잃었고, 말을 잃었죠. 무서웠거든요. 말하는 게."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 별을 보고 걸음을 멈춘다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "하지만 플룻만은 손에서 놓지 않았어요. 아버지가 만들어주신... 마지막 선물이었거든요."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 플룻을 가슴에 안는다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "그 별을 보는 순간... 뭔가 말해야 할 것 같았어요."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 중앙에서 만난다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "그렇게... 세 아이가 만났어요. 별 아래서."
-        </p>
 
         {/* 1장: 만남 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -170,82 +170,82 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             별 아래서 모인 세 아이
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/04.png"
+              alt="세 아이의 만남"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 서로를 발견하고 놀란다. 잠시 경계
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (밝게, 하지만 어색하게):</p>
+            <p className="text-[#ddd]">"어... 안녕? 너희도 저 별 보고 온 거야?"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            카스퍼가 고개를 끄덕인다. 경계는 풀지 않고
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"별의 위치가... 이상해. 천문학적으로."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
+            <p className="text-[#ddd]">"천문학? 나 그런 거 몰라. 그냥... 가고 싶었어."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로는 말없이 별을 가리킨다. 플룻을 들고
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (밀로에게):</p>
+            <p className="text-[#ddd]">"너는? 말 안 해?"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 고개를 젓는다. 플룻을 조금 들어 보인다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"혼자 가기엔 위험해. 함께 가는 게..." 잠시 망설이다 "...합리적이야."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (웃으며):</p>
+            <p className="text-[#ddd]">"그래, 합리적. 좋아." 손을 내민다 "같이 가자."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 천천히 손을 맞잡는다. 별을 향해 걷기 시작
+          </div>
         </motion.div>
-
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/04.png"
-            alt="세 아이의 만남"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 서로를 발견하고 놀란다. 잠시 경계
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (밝게, 하지만 어색하게):</p>
-          <p className="text-[#ddd]">"어... 안녕? 너희도 저 별 보고 온 거야?"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          카스퍼가 고개를 끄덕인다. 경계는 풀지 않고
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"별의 위치가... 이상해. 천문학적으로."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-          <p className="text-[#ddd]">"천문학? 나 그런 거 몰라. 그냥... 가고 싶었어."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로는 말없이 별을 가리킨다. 플룻을 들고
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (밀로에게):</p>
-          <p className="text-[#ddd]">"너는? 말 안 해?"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 고개를 젓는다. 플룻을 조금 들어 보인다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"혼자 가기엔 위험해. 함께 가는 게..." 잠시 망설이다 "...합리적이야."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (웃으며):</p>
-          <p className="text-[#ddd]">"그래, 합리적. 좋아." 손을 내민다 "같이 가자."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 천천히 손을 맞잡는다. 별을 향해 걷기 시작
-        </div>
 
         {/* 2장: 첫 번째 시험 - 폭풍 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -261,87 +261,87 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             서로를 감싸 안은 따뜻함
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-        </motion.div>
 
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
           >
             <Image
-            src="/05.png"
-            alt="폭풍"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
+              src="/05.png"
+              alt="폭풍"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            무대가 어두워진다. 바람 소리, 격렬한 그림자 움직임<br/>세 아이의 그림자가 폭풍에 휘청인다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (소리치며):</p>
+            <p className="text-[#ddd]">"안 돼... 너무 추워!"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            발토의 그림자가 쓰러진다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (다가가며):</p>
+            <p className="text-[#ddd]">"일어나! 여기서 멈추면 죽어!"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
+            <p className="text-[#ddd]">"몰라... 엄마가 그리워... 나 혼자야... 혼자라고..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 조용히 자신의 옷을 벗어 발토에게 덮어준다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (놀라며):</p>
+            <p className="text-[#ddd]">"야! 미쳤어? 넌 얼어 죽을 거야!"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 고개를 젓고 카스퍼의 손을 잡아 발토에게 이끈다<br/>세 그림자가 서로를 감싼다. 격렬한 움직임에서 천천히 하나의 큰 그림자로
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 목소리):</p>
+            <p className="text-[#ddd]">"따뜻해..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (작게):</p>
+            <p className="text-[#ddd]">"...우린 혼자가 아니야."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            폭풍이 점점 잦아든다. 별빛이 다시 보인다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며, 웃으며):</p>
+            <p className="text-[#ddd]">"다시... 가볼까?"</p>
+          </div>
         </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          무대가 어두워진다. 바람 소리, 격렬한 그림자 움직임<br/>세 아이의 그림자가 폭풍에 휘청인다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (소리치며):</p>
-          <p className="text-[#ddd]">"안 돼... 너무 추워!"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          발토의 그림자가 쓰러진다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (다가가며):</p>
-          <p className="text-[#ddd]">"일어나! 여기서 멈추면 죽어!"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
-          <p className="text-[#ddd]">"몰라... 엄마가 그리워... 나 혼자야... 혼자라고..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 조용히 자신의 옷을 벗어 발토에게 덮어준다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (놀라며):</p>
-          <p className="text-[#ddd]">"야! 미쳤어? 넌 얼어 죽을 거야!"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 고개를 젓고 카스퍼의 손을 잡아 발토에게 이끈다<br/>세 그림자가 서로를 감싼다. 격렬한 움직임에서 천천히 하나의 큰 그림자로
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 목소리):</p>
-          <p className="text-[#ddd]">"따뜻해..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (작게):</p>
-          <p className="text-[#ddd]">"...우린 혼자가 아니야."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          폭풍이 점점 잦아든다. 별빛이 다시 보인다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며, 웃으며):</p>
-          <p className="text-[#ddd]">"다시... 가볼까?"</p>
-        </div>
 
         {/* 3장: 두 번째 시험 - 마을 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -357,148 +357,148 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             진심이 만든 작은 기적
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/06.png"
+              alt="마을"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            어두운 마을. 위협적인 그림자들이 사방에서 나타난다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (창을 든 그림자):</p>
+            <p className="text-[#ddd]">"거기 서!"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
+            <p className="text-[#ddd]">"낯선 놈들이야! 도둑인가?"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 움찔한다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (손을 들며):</p>
+            <p className="text-[#ddd]">"아니에요! 우린 그냥 지나가려고..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 3:</p>
+            <p className="text-[#ddd]">"한밤중에? 믿을 수 없어!"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            마을 사람들이 점점 다가온다. 긴장
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (앞으로 나서며):</p>
+            <p className="text-[#ddd]">"우린 학자들이에요! 저 별을 연구..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (비웃으며):</p>
+            <p className="text-[#ddd]">"별? 말도 안 돼!"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 갑자기 앞으로 나선다. 모두가 멈춘다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (작지만 분명하게):</p>
+            <p className="text-[#ddd]">"...왕이요."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            침묵
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
+            <p className="text-[#ddd]">"뭐?"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"새로 태어나실... 왕을 찾아가요."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">마을 사람 1:</p>
+            <p className="text-[#ddd]">"무슨 헛소리..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            노파의 그림자가 천천히 앞으로
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">노파 (부드럽게):</p>
+            <p className="text-[#ddd]">"잠깐." 아이들을 바라보며 "...너희, 진심이니?"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (고개를 끄덕이며):</p>
+            <p className="text-[#ddd]">"제 엄마가... 돌아가시기 전에 말씀하셨어요. 세상에 아직 사랑이 있다고. 저는... 그게 보고 싶어요."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"저는 믿지 않았어요. 근데 이 별을 보고... 뭔가 있을지도 모른다고 생각했어요."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"저는 전쟁을 봤어요. 사람들이 죽이는 걸. 하지만... 평화가 있을까 싶어서..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            긴 침묵. 노파가 무릎을 꿇는다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">노파:</p>
+            <p className="text-[#ddd]">"...나도 옛날엔 그랬단다. 너희만큼 순수하게 믿었지." 일어서며 "가거라. 동쪽으로. 베들레헴."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            한 마을 사람이 빵을 건넨다. 아무 말 없이
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (빵을 받으며):</p>
+            <p className="text-[#ddd]">"...고마워요."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            마을 사람들이 천천히 길을 열어준다
+          </div>
         </motion.div>
-
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/06.png"
-            alt="마을"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          어두운 마을. 위협적인 그림자들이 사방에서 나타난다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (창을 든 그림자):</p>
-          <p className="text-[#ddd]">"거기 서!"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
-          <p className="text-[#ddd]">"낯선 놈들이야! 도둑인가?"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 아이가 움찔한다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (손을 들며):</p>
-          <p className="text-[#ddd]">"아니에요! 우린 그냥 지나가려고..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 3:</p>
-          <p className="text-[#ddd]">"한밤중에? 믿을 수 없어!"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          마을 사람들이 점점 다가온다. 긴장
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (앞으로 나서며):</p>
-          <p className="text-[#ddd]">"우린 학자들이에요! 저 별을 연구..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 1 (비웃으며):</p>
-          <p className="text-[#ddd]">"별? 말도 안 돼!"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 갑자기 앞으로 나선다. 모두가 멈춘다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (작지만 분명하게):</p>
-          <p className="text-[#ddd]">"...왕이요."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          침묵
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 2:</p>
-          <p className="text-[#ddd]">"뭐?"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"새로 태어나실... 왕을 찾아가요."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">마을 사람 1:</p>
-          <p className="text-[#ddd]">"무슨 헛소리..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          노파의 그림자가 천천히 앞으로
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">노파 (부드럽게):</p>
-          <p className="text-[#ddd]">"잠깐." 아이들을 바라보며 "...너희, 진심이니?"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (고개를 끄덕이며):</p>
-          <p className="text-[#ddd]">"제 엄마가... 돌아가시기 전에 말씀하셨어요. 세상에 아직 사랑이 있다고. 저는... 그게 보고 싶어요."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"저는 믿지 않았어요. 근데 이 별을 보고... 뭔가 있을지도 모른다고 생각했어요."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"저는 전쟁을 봤어요. 사람들이 죽이는 걸. 하지만... 평화가 있을까 싶어서..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          긴 침묵. 노파가 무릎을 꿇는다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">노파:</p>
-          <p className="text-[#ddd]">"...나도 옛날엔 그랬단다. 너희만큼 순수하게 믿었지." 일어서며 "가거라. 동쪽으로. 베들레헴."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          한 마을 사람이 빵을 건넨다. 아무 말 없이
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (빵을 받으며):</p>
-          <p className="text-[#ddd]">"...고마워요."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          마을 사람들이 천천히 길을 열어준다
-        </div>
 
         {/* 4장: 세 번째 시험 - 절망 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -514,205 +514,205 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             플룻 선율에 담긴 위로
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/07.png"
+              alt="플룻 연주"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            끝없는 길. 세 그림자의 움직임이 극도로 느려진다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (쓰러지며):</p>
+            <p className="text-[#ddd]">"안 돼... 다리가..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (주저앉으며):</p>
+            <p className="text-[#ddd]">"며칠째야... 며칠째..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로도 무릎을 꿇는다. 긴 침묵
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (쓴웃음):</p>
+            <p className="text-[#ddd]">"내가 맞았어. 신 같은 건 없어. 우린 그냥... 바보같은 꿈을 꾼 거야."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
+            <p className="text-[#ddd]">"엄마... 미안해... 난..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            더 긴 침묵. 별빛마저 희미해진다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (흐느끼며):</p>
+            <p className="text-[#ddd]">"돌아가고 싶어... 집으로... 그냥..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (고개를 숙이며):</p>
+            <p className="text-[#ddd]">"집... 집이 어딘지도 모르겠어..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 천천히 플룻을 꺼낸다. 두 친구를 바라본다<br/>발토와 카스퍼가 고개를 든다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
+            <p className="text-[#ddd]">"...밀로?"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 플룻을 입에 댄다
+          </div>
+
+          <motion.div 
+            className="text-[#d4af37] font-medium my-8 p-4 bg-[#1a1a1a] border-l-4 border-[#d4af37] text-center text-lg"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            [플룻 연주 - 1분]
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            부드럽고 슬픈 플룻 선율이 시작된다. 밀로의 그림자가 커지고, 세 아이 뒤로 잃어버린 가족들의 희미한 형상이 나타났다 사라진다. 음악이 슬픔에서 희망으로 변하며, 별빛만 더욱 밝게 남는다.
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            긴 침묵
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며, 떨리는 목소리):</p>
+            <p className="text-[#ddd]">"그게... 네 아버지가 만들어주신 거구나..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 고개를 끄덕인다. 플룻을 가슴에 안는다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (목이 메어):</p>
+            <p className="text-[#ddd]">"너... 지금까지 한 번도 불지 않았잖아..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (작게):</p>
+            <p className="text-[#ddd]">"...무서웠어요. 불면... 울 것 같아서."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
+            <p className="text-[#ddd]">"울어도 돼. 우리... 여기 있잖아."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 눈물을 흘린다. 처음으로
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (울먹이며):</p>
+            <p className="text-[#ddd]">"아빠가... 말했어요. 플룻은... 슬플 때 부는 게 아니라... 누군가를 위로할 때 부는 거라고..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (일어서며):</p>
+            <p className="text-[#ddd]">"...위로됐어. 정말로."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며):</p>
+            <p className="text-[#ddd]">"나도... 엄마가... 들었을 것 같아."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 천천히 일어선다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"우리... 바보 아니야."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"뭐?"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"폭풍 속에서... 따뜻했잖아. 마을에서... 빵 받았잖아. 지금... 위로받았잖아. 그게..." 가슴을 가리킨다 "여기 있어."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (천천히 일어서며):</p>
+            <p className="text-[#ddd]">"맞아... 엄마도 여기 있어..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (떨리는 목소리):</p>
+            <p className="text-[#ddd]">"우리가... 찾던 게..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">함께:</p>
+            <p className="text-[#ddd]">"여기 있었어."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 서로를 부축하며 일어선다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
+            <p className="text-[#ddd]">"마지막까지?"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"마지막까지."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"같이."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            그 순간, 별이 다시 환하게 빛난다
+          </div>
         </motion.div>
-
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/07.png"
-            alt="플룻 연주"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          끝없는 길. 세 그림자의 움직임이 극도로 느려진다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (쓰러지며):</p>
-          <p className="text-[#ddd]">"안 돼... 다리가..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (주저앉으며):</p>
-          <p className="text-[#ddd]">"며칠째야... 며칠째..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로도 무릎을 꿇는다. 긴 침묵
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (쓴웃음):</p>
-          <p className="text-[#ddd]">"내가 맞았어. 신 같은 건 없어. 우린 그냥... 바보같은 꿈을 꾼 거야."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
-          <p className="text-[#ddd]">"엄마... 미안해... 난..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          더 긴 침묵. 별빛마저 희미해진다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (흐느끼며):</p>
-          <p className="text-[#ddd]">"돌아가고 싶어... 집으로... 그냥..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (고개를 숙이며):</p>
-          <p className="text-[#ddd]">"집... 집이 어딘지도 모르겠어..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 천천히 플룻을 꺼낸다. 두 친구를 바라본다<br/>발토와 카스퍼가 고개를 든다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
-          <p className="text-[#ddd]">"...밀로?"</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 플룻을 입에 댄다
-        </div>
-
-        <motion.div 
-          className="text-[#d4af37] font-medium my-8 p-4 bg-[#1a1a1a] border-l-4 border-[#d4af37] text-center text-lg"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          [플룻 연주 - 1분]
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          부드럽고 슬픈 플룻 선율이 시작된다. 밀로의 그림자가 커지고, 세 아이 뒤로 잃어버린 가족들의 희미한 형상이 나타났다 사라진다. 음악이 슬픔에서 희망으로 변하며, 별빛만 더욱 밝게 남는다.
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          긴 침묵
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며, 떨리는 목소리):</p>
-          <p className="text-[#ddd]">"그게... 네 아버지가 만들어주신 거구나..."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 고개를 끄덕인다. 플룻을 가슴에 안는다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (목이 메어):</p>
-          <p className="text-[#ddd]">"너... 지금까지 한 번도 불지 않았잖아..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (작게):</p>
-          <p className="text-[#ddd]">"...무서웠어요. 불면... 울 것 같아서."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-          <p className="text-[#ddd]">"울어도 돼. 우리... 여기 있잖아."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 눈물을 흘린다. 처음으로
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (울먹이며):</p>
-          <p className="text-[#ddd]">"아빠가... 말했어요. 플룻은... 슬플 때 부는 게 아니라... 누군가를 위로할 때 부는 거라고..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (일어서며):</p>
-          <p className="text-[#ddd]">"...위로됐어. 정말로."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며):</p>
-          <p className="text-[#ddd]">"나도... 엄마가... 들었을 것 같아."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로가 천천히 일어선다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"우리... 바보 아니야."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"뭐?"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"폭풍 속에서... 따뜻했잖아. 마을에서... 빵 받았잖아. 지금... 위로받았잖아. 그게..." 가슴을 가리킨다 "여기 있어."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (천천히 일어서며):</p>
-          <p className="text-[#ddd]">"맞아... 엄마도 여기 있어..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (떨리는 목소리):</p>
-          <p className="text-[#ddd]">"우리가... 찾던 게..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">함께:</p>
-          <p className="text-[#ddd]">"여기 있었어."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 아이가 서로를 부축하며 일어선다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-          <p className="text-[#ddd]">"마지막까지?"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"마지막까지."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"같이."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          그 순간, 별이 다시 환하게 빛난다
-        </div>
 
         {/* 5장: 도착 - 빛 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -728,128 +728,128 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             말구유에서 만난 작은 빛
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/08.png"
+              alt="도착"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            따뜻한 빛이 무대를 채운다. 말구유의 형상
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (숨을 죽이며):</p>
+            <p className="text-[#ddd]">"...저기."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 천천히 무릎을 꿇는다
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            발토가 황금을 바친다<br/>
+            카스퍼가 유향을 바친다<br/>
+            밀로가... 플룻을 내려놓으려 한다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
+            <p className="text-[#ddd]">"밀로... 그건..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (미소 지으며):</p>
+            <p className="text-[#ddd]">"괜찮아요. 아빠가 만들어주신 건... 이걸 위해서였던 것 같아요."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            하지만 말구유에서 부드러운 빛이 나오며 플룻이 다시 밀로에게 돌아온다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (경외하며):</p>
+            <p className="text-[#ddd]">"...플룻이..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (놀라며 플룻을 받으며):</p>
+            <p className="text-[#ddd]">"이건... 선물이 아니라... 제가 받은 거예요."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 아기를 바라본다. 긴 침묵<br/>음악만 흐른다
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며):</p>
+            <p className="text-[#ddd]">"이렇게... 작은데..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼 (경외하며):</p>
+            <p className="text-[#ddd]">"이렇게... 밝아..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로 (미소 지으며):</p>
+            <p className="text-[#ddd]">"...예뻐."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 아기를 바라본다. 한참 후
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
+            <p className="text-[#ddd]">"우리... 잘 찾아왔지?"</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"응... 잘 찾아왔어."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
+            <p className="text-[#ddd]">"이제... 돌아가야 해."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
+            <p className="text-[#ddd]">"응."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
+            <p className="text-[#ddd]">"근데..."</p>
+          </div>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">함께:</p>
+            <p className="text-[#ddd]">"우린... 다르게 돌아갈 거야."</p>
+          </div>
         </motion.div>
-
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/08.png"
-            alt="도착"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          따뜻한 빛이 무대를 채운다. 말구유의 형상
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (숨을 죽이며):</p>
-          <p className="text-[#ddd]">"...저기."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 아이가 천천히 무릎을 꿇는다
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          발토가 황금을 바친다<br/>
-          카스퍼가 유향을 바친다<br/>
-          밀로가... 플룻을 내려놓으려 한다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
-          <p className="text-[#ddd]">"밀로... 그건..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (미소 지으며):</p>
-          <p className="text-[#ddd]">"괜찮아요. 아빠가 만들어주신 건... 이걸 위해서였던 것 같아요."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          하지만 말구유에서 부드러운 빛이 나오며 플룻이 다시 밀로에게 돌아온다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (경외하며):</p>
-          <p className="text-[#ddd]">"...플룻이..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (놀라며 플룻을 받으며):</p>
-          <p className="text-[#ddd]">"이건... 선물이 아니라... 제가 받은 거예요."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 아이가 아기를 바라본다. 긴 침묵<br/>음악만 흐른다
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며):</p>
-          <p className="text-[#ddd]">"이렇게... 작은데..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼 (경외하며):</p>
-          <p className="text-[#ddd]">"이렇게... 밝아..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로 (미소 지으며):</p>
-          <p className="text-[#ddd]">"...예뻐."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 아이가 아기를 바라본다. 한참 후
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
-          <p className="text-[#ddd]">"우리... 잘 찾아왔지?"</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"응... 잘 찾아왔어."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">밀로:</p>
-          <p className="text-[#ddd]">"이제... 돌아가야 해."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-          <p className="text-[#ddd]">"응."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">카스퍼:</p>
-          <p className="text-[#ddd]">"근데..."</p>
-        </div>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">함께:</p>
-          <p className="text-[#ddd]">"우린... 다르게 돌아갈 거야."</p>
-        </div>
 
         {/* 에필로그 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -865,89 +865,89 @@ export default function Home() {
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide">
             우리 안에 있던 신
           </p>
-          <div className="flex items-center gap-4 mt-4">
+          <div className="flex items-center gap-4 mt-4 mb-8">
             <div className="h-px flex-1 bg-gradient-to-r from-transparent to-[#d4af37]"></div>
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
+
+          <motion.div 
+            className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/09.png"
+              alt="에필로그"
+              width={1200}
+              height={600}
+              className="w-full h-auto max-h-[70vh] object-contain"
+            />
+          </motion.div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 천천히 변한다. 성장한 모습으로
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "그날 밤 이후... 세 아이는 어른이 되어 돌아갔어요. 각자의 땅으로."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 서로 다른 방향으로
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "그리고 이야기했죠. 별을 따라간 이야기를. 빛을 만난 이야기를."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로의 그림자가 플룻을 부는 형상
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "밀로는 평생 플룻을 불었답니다. 슬픈 사람들을 위로하며."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            무대가 점점 밝아진다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "사람들은 물었어요. '정말 신을 봤느냐'고."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 그림자가 동시에 가슴을 가리킨다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자: "세 사람은 이렇게 대답했답니다."
+          </p>
+
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">함께 (마지막으로):</p>
+            <p className="text-[#ddd]">"신은... 멀리 있지 않았어요. 여기 있었어요." 서로를 가리킨다 "우리 안에."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            무대 전체가 빛으로 가득 찬다<br/>희미하게 플룻 선율이 다시 들린다
+          </div>
+
+          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
+            해설자 (속삭이듯): "우리는... 별을 따랐습니다."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            하나의 별빛화면과 함께 불이 켜지며 합주인원 등장
+          </div>
         </motion.div>
-
-        <motion.div 
-          className="w-full my-8 rounded overflow-hidden flex items-center justify-center max-h-[70vh]"
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src="/09.png"
-            alt="에필로그"
-            width={1200}
-            height={600}
-            className="w-full h-auto max-h-[70vh] object-contain"
-          />
-        </motion.div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 천천히 변한다. 성장한 모습으로
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "그날 밤 이후... 세 아이는 어른이 되어 돌아갔어요. 각자의 땅으로."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 서로 다른 방향으로
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "그리고 이야기했죠. 별을 따라간 이야기를. 빛을 만난 이야기를."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          밀로의 그림자가 플룻을 부는 형상
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "밀로는 평생 플룻을 불었답니다. 슬픈 사람들을 위로하며."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          무대가 점점 밝아진다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "사람들은 물었어요. '정말 신을 봤느냐'고."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          세 그림자가 동시에 가슴을 가리킨다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자: "세 사람은 이렇게 대답했답니다."
-        </p>
-
-        <div className="my-6 text-base leading-loose">
-          <p className="text-[#f5d576] font-medium mb-2">함께 (마지막으로):</p>
-          <p className="text-[#ddd]">"신은... 멀리 있지 않았어요. 여기 있었어요." 서로를 가리킨다 "우리 안에."</p>
-        </div>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          무대 전체가 빛으로 가득 찬다<br/>희미하게 플룻 선율이 다시 들린다
-        </div>
-
-        <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444]">
-          해설자 (속삭이듯): "우리는... 별을 따랐습니다."
-        </p>
-
-        <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-          하나의 별빛화면과 함께 불이 켜지며 합주인원 등장
-        </div>
 
         {/* 피날레 */}
         <motion.div
-          className="my-16 md:my-24"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
