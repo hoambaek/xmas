@@ -5,10 +5,12 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function Home() {
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
+  const [expandedSections, setExpandedSections] = useState<string[]>([]);
 
   const toggleSection = (id: string) => {
-    setExpandedSection(expandedSection === id ? null : id);
+    setExpandedSections(prev => 
+      prev.includes(id) ? prev.filter(item => item !== id) : [...prev, id]
+    );
   };
 
   return (
@@ -988,13 +990,13 @@ export default function Home() {
               className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
             >
               <span>기획의도</span>
-              <span className={`transform transition-transform ${expandedSection === "concept-notes" ? "rotate-180" : ""}`}>
+              <span className={`transform transition-transform ${expandedSections.includes("concept-notes") ? "rotate-180" : ""}`}>
                 ▼
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "concept-notes" ? "max-h-[2000px] mt-4" : "max-h-0"
+                expandedSections.includes("concept-notes") ? "max-h-[2000px] mt-4" : "max-h-0"
               }`}
             >
               <div className="text-[#b0b0b0] leading-relaxed space-y-6">
@@ -1059,13 +1061,13 @@ export default function Home() {
               className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
             >
               <span>캐릭터 설정</span>
-              <span className={`transform transition-transform ${expandedSection === "character-notes" ? "rotate-180" : ""}`}>
+              <span className={`transform transition-transform ${expandedSections.includes("character-notes") ? "rotate-180" : ""}`}>
                 ▼
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "character-notes" ? "max-h-[2500px] mt-4" : "max-h-0"
+                expandedSections.includes("character-notes") ? "max-h-[2500px] mt-4" : "max-h-0"
               }`}
             >
               <div className="text-[#b0b0b0] leading-relaxed space-y-6">
@@ -1130,13 +1132,13 @@ export default function Home() {
               className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
             >
               <span>핵심 연출</span>
-              <span className={`transform transition-transform ${expandedSection === "core-direction" ? "rotate-180" : ""}`}>
+              <span className={`transform transition-transform ${expandedSections.includes("core-direction") ? "rotate-180" : ""}`}>
                 ▼
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "core-direction" ? "max-h-[3500px] mt-4" : "max-h-0"
+                expandedSections.includes("core-direction") ? "max-h-[3500px] mt-4" : "max-h-0"
               }`}
             >
               <div className="space-y-6 text-[#b0b0b0] leading-relaxed">
@@ -1282,13 +1284,13 @@ export default function Home() {
               className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
             >
               <span>그림자극 레퍼런스 영상</span>
-              <span className={`transform transition-transform ${expandedSection === "reference-videos" ? "rotate-180" : ""}`}>
+              <span className={`transform transition-transform ${expandedSections.includes("reference-videos") ? "rotate-180" : ""}`}>
                 ▼
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "reference-videos" ? "max-h-[1500px] mt-4" : "max-h-0"
+                expandedSections.includes("reference-videos") ? "max-h-[1500px] mt-4" : "max-h-0"
               }`}
             >
               <div className="space-y-6">
