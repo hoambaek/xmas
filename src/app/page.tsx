@@ -999,8 +999,9 @@ export default function Home() {
                 expandedSections.includes("concept-notes") ? "max-h-[2000px] mt-4" : "max-h-0"
               }`}
             >
-              <div className="text-[#b0b0b0] leading-relaxed space-y-6">
-                <div>
+              <div className="text-[#b0b0b0] leading-relaxed space-y-4">
+                {/* 작품의 출발점 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">작품의 출발점</h4>
                   <p className="leading-loose">
                     전통적으로 동방박사는 나이 든 현자로 그려지지만, 이 작품은 그들을 <span className="text-[#d4af37]">13-15세 세 아이</span>로 재해석했습니다. 
@@ -1008,7 +1009,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div>
+                {/* 그림자극이라는 형식 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">그림자극이라는 형식</h4>
                   <p className="leading-loose">
                     빛과 어둠, 형태와 움직임만으로 이야기를 전달하는 절제된 비주얼은 감정의 순도를 높이고 관객의 상상력을 자극합니다. 
@@ -1016,7 +1018,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div>
+                {/* 세 아이 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">세 아이, 현대 청소년의 거울</h4>
                   <div className="space-y-3">
                     <p><span className="text-[#d4af37] font-medium">발토 (15세)</span> - 상실의 슬픔을 밝음 뒤에 숨기는 아이. 진짜 감정을 드러내는 용기를 배웁니다.</p>
@@ -1025,7 +1028,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 핵심 메시지 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">핵심 메시지</h4>
                   <p className="leading-loose mb-3">
                     <span className="text-[#d4af37]">"신은 멀리 있지 않았어요. 우리 안에 있었어요."</span>
@@ -1036,7 +1040,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div>
+                {/* 제작 방식 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">제작 방식</h4>
                   <p className="leading-loose">
                     학생들의 목소리를 선녹음 후 그림자 연기를 촬영합니다. 자신의 목소리로 캐릭터를 만들어가며, 
@@ -1044,7 +1049,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-[#333]">
+                {/* 영감 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <p className="leading-loose italic text-[#888]">
                     T.S. 엘리엇의 《동방 박사들의 여정》에서 영감을 받아, 여정의 낭만이 아닌 실제적인 고난과 의심, 
                     그 속에서 발견하는 서로 안의 빛을 그립니다. 2000년 전 이야기를 21세기 청소년의 언어로 재해석한 작품입니다.
@@ -1070,10 +1076,11 @@ export default function Home() {
                 expandedSections.includes("character-notes") ? "max-h-[2500px] mt-4" : "max-h-0"
               }`}
             >
-              <div className="text-[#b0b0b0] leading-relaxed space-y-6">
-                <div>
+              <div className="text-[#b0b0b0] leading-relaxed space-y-4">
+                {/* 주요 인물 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">주요 인물</h4>
-                  <div className="space-y-4 ml-2">
+                  <div className="space-y-4">
                     <p>
                       <strong className="text-[#d4af37]">발토 (Balto, 15세):</strong> 세 아이 중 가장 나이가 많은 소년. 병으로 가족을 잃었다. 슬픔을 감추기 위해 항상 웃으려 하지만, 내면의 외로움이 깊다. 별을 보고 엄마를 떠올리며 여정을 시작한다. 황금을 선물로 바친다. 밝고 긍정적인 성격이지만 폭풍 속에서 무너지는 연약한 모습도 보인다.
                     </p>
@@ -1086,9 +1093,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 조연 인물 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">조연 인물</h4>
-                  <div className="space-y-4 ml-2">
+                  <div className="space-y-4">
                     <p>
                       <strong className="text-[#d4af37]">해설자 (Narrator):</strong> 따뜻하고 부드러운 목소리로 이야기를 전달한다. 관객과 무대를 연결하는 역할. 세 아이의 과거와 감정을 설명하며, 마치 오래된 동화를 들려주듯 이야기한다.
                     </p>
@@ -1107,9 +1115,10 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 상징적 존재 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h4 className="text-lg text-[#d4af37] mb-3 font-medium">상징적 존재</h4>
-                  <div className="space-y-4 ml-2">
+                  <div className="space-y-4">
                     <p>
                       <strong className="text-[#d4af37]">별:</strong> 세 아이를 인도하는 신비로운 존재. 희망과 신앙의 상징.
                     </p>
@@ -1141,8 +1150,9 @@ export default function Home() {
                 expandedSections.includes("core-direction") ? "max-h-[3500px] mt-4" : "max-h-0"
               }`}
             >
-              <div className="space-y-6 text-[#b0b0b0] leading-relaxed">
-                <div>
+              <div className="space-y-4 text-[#b0b0b0] leading-relaxed">
+                {/* 1단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">1단계: 사전 준비</h3>
                   <div className="space-y-3">
                     <p>
@@ -1160,7 +1170,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 2단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">2단계: 무대 배치</h3>
                   <div className="space-y-3">
                     <p>
@@ -1174,7 +1185,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 3단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">3단계: 장면별 연출 가이드</h3>
                   <p>
                     <strong className="text-[#d4af37]">프롤로그</strong> (50초) → 
@@ -1188,7 +1200,8 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div>
+                {/* 4단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">4단계: 피날레 합주 진행</h3>
                   <div className="space-y-3">
                     <p>
@@ -1213,7 +1226,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 5단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">5단계: 기술 체크리스트</h3>
                   <div className="space-y-3">
                     <p>
@@ -1240,7 +1254,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div>
+                {/* 6단계 카드 */}
+                <div className="bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-6">
                   <h3 className="text-xl text-[#d4af37] mb-3 font-normal">6단계: 리허설 일정</h3>
                   <p>
                     <strong className="text-[#d4af37]">1차:</strong> 영상 + 사운드 동기화 확인<br/>
