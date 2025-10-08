@@ -100,8 +100,8 @@ export default function Home() {
         </motion.div>
       </motion.div>
 
-      {/* 등장인물 섹션 */}
-      <motion.div 
+      {/* 등장인물 섹션 - 비활성화 (나중에 다시 활성화 가능) */}
+      {/* <motion.div 
         className="px-4 py-8 md:px-24 bg-gradient-to-b from-black to-[#0a0a0a]"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export default function Home() {
             </button>
           )}
         </div>
-      </motion.div>
+      </motion.div> */}
 
       {/* Content */}
       <div className="px-4 py-12 md:px-24">
