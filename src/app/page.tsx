@@ -1065,7 +1065,7 @@ export default function Home() {
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "character-notes" ? "max-h-[800px] mt-4" : "max-h-0"
+                expandedSection === "character-notes" ? "max-h-[2500px] mt-4" : "max-h-0"
               }`}
             >
               <div className="text-[#b0b0b0] leading-relaxed space-y-6">
@@ -1288,7 +1288,7 @@ export default function Home() {
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSection === "reference-videos" ? "max-h-[1000px] mt-4" : "max-h-0"
+                expandedSection === "reference-videos" ? "max-h-[1500px] mt-4" : "max-h-0"
               }`}
             >
               <div className="space-y-6">
