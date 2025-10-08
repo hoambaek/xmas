@@ -44,10 +44,10 @@ export default function Home() {
       </motion.div>
 
       {/* Content */}
-      <div className="px-6 py-12 md:px-24">
+      <div className="px-4 py-12 md:px-24">
         {/* 프롤로그 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -154,7 +154,7 @@ export default function Home() {
 
         {/* 1장: 만남 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -245,7 +245,7 @@ export default function Home() {
 
         {/* 2장: 첫 번째 시험 - 폭풍 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -341,7 +341,7 @@ export default function Home() {
 
         {/* 3장: 두 번째 시험 - 마을 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -498,7 +498,7 @@ export default function Home() {
 
         {/* 4장: 세 번째 시험 - 절망 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -712,7 +712,7 @@ export default function Home() {
 
         {/* 5장: 도착 - 빛 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -849,7 +849,7 @@ export default function Home() {
 
         {/* 에필로그 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -947,7 +947,7 @@ export default function Home() {
 
         {/* 피날레 */}
         <motion.div
-          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-6 md:p-10"
+          className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
