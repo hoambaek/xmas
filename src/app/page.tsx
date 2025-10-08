@@ -24,7 +24,7 @@ export default function Home() {
           src="/01.png"
           alt="별을 따라서"
           fill
-          className="object-cover"
+          className="object-cover md:object-cover object-contain"
           priority
         />
         <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black/80 via-black/50 to-transparent pointer-events-none" />
