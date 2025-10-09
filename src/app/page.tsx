@@ -197,7 +197,7 @@ export default function Home() {
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "어느 날 밤, 이상한 별을 봤어요. 발토는 '엄마가 저기 있을까?' 생각했죠."
+            해설자: "어느 날 밤, 이상한 별을 봤어요. 그 별 속에 엄마가 있을 것 같았어요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
