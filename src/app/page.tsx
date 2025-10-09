@@ -113,16 +113,22 @@ export default function Home() {
             <button
               key={character.id}
               onClick={() => handleCharacterClick(character.id)}
-              className={`px-4 py-2 rounded-full transition-all duration-300 font-medium ${
+              className={`px-5 py-2.5 rounded-xl backdrop-blur-sm border transition-all duration-300 font-medium ${
                 selectedCharacter === character.id
                   ? "scale-110 shadow-lg"
                   : "hover:scale-105"
               }`}
               style={{
-                backgroundColor: selectedCharacter === character.id ? character.color : "transparent",
-                borderColor: character.color,
-                borderWidth: "2px",
-                color: selectedCharacter === character.id ? "#000" : character.color,
+                backgroundColor: selectedCharacter === character.id 
+                  ? `${character.color}40` 
+                  : `${character.color}0D`,
+                borderColor: selectedCharacter === character.id 
+                  ? `${character.color}99` 
+                  : `${character.color}4D`,
+                color: character.color,
+                boxShadow: selectedCharacter === character.id 
+                  ? `0 10px 25px ${character.color}33` 
+                  : "none",
               }}
             >
               {character.name}
@@ -131,7 +137,7 @@ export default function Home() {
           {selectedCharacter && (
             <button
               onClick={() => setSelectedCharacter(null)}
-              className="px-4 py-2 rounded-full bg-[#333] text-white hover:bg-[#444] transition-all duration-300 font-medium"
+              className="px-5 py-2.5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/30 text-white hover:bg-white/10 hover:border-white/60 transition-all duration-300 font-medium"
             >
               전체 보기
             </button>
@@ -139,10 +145,45 @@ export default function Home() {
         </div>
       </motion.div> */}
 
+      {/* 장 네비게이션 */}
+      <motion.div 
+        className="px-4 py-8 md:px-24 bg-gradient-to-b from-black to-[#0a0a0a]"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.3 }}
+      >
+        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium">챕터 선택</h2>
+        <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
+          {[
+            { id: "prologue", name: "프롤로그" },
+            { id: "chapter1", name: "1장: 만남" },
+            { id: "chapter2", name: "2장: 폭풍" },
+            { id: "chapter3", name: "3장: 마을" },
+            { id: "chapter4", name: "4장: 절망" },
+            { id: "chapter5", name: "5장: 도착" },
+            { id: "epilogue", name: "에필로그" },
+            { id: "finale", name: "피날레" },
+            { id: "notes", name: "연출 노트" },
+          ].map((chapter) => (
+            <button
+              key={chapter.id}
+              onClick={() => {
+                const element = document.getElementById(chapter.id);
+                element?.scrollIntoView({ behavior: "smooth", block: "start" });
+              }}
+              className="px-5 py-2.5 rounded-xl bg-white/5 backdrop-blur-sm border border-[#d4af37]/30 text-[#d4af37] hover:bg-[#d4af37]/20 hover:border-[#d4af37]/60 hover:shadow-lg hover:shadow-[#d4af37]/20 transition-all duration-300 font-medium"
+            >
+              {chapter.name}
+            </button>
+          ))}
+        </div>
+      </motion.div>
+
       {/* Content */}
       <div className="px-4 py-12 md:px-24">
         {/* 프롤로그 */}
         <motion.div
+          id="prologue"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -251,6 +292,7 @@ export default function Home() {
 
         {/* 1장: 만남 */}
         <motion.div
+          id="chapter1"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -403,6 +445,7 @@ export default function Home() {
 
         {/* 2장: 첫 번째 시험 - 폭풍 */}
         <motion.div
+          id="chapter2"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -499,6 +542,7 @@ export default function Home() {
 
         {/* 3장: 두 번째 시험 - 마을 */}
         <motion.div
+          id="chapter3"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -548,7 +592,7 @@ export default function Home() {
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
             <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
-            <p className="text-[#ddd]">"이 시간에 떠도는 애들? 도둑이야!"</p>
+            <p className="text-[#ddd]">"한밤중에 애들이? 도둑놈들이구만!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -561,8 +605,8 @@ export default function Home() {
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람3")}`} style={getDialogueInlineStyle("마을사람3")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 3:</p>
-            <p className="text-[#ddd]">"이 한밤중에? 말이 돼?"</p>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
+            <p className="text-[#ddd]">"한밤중에 지나간다고? 믿을 수 있나!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -576,7 +620,7 @@ export default function Home() {
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
             <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (비웃으며):</p>
-            <p className="text-[#ddd]">"별? 무슨 말도 안되는 소리야야!"</p>
+            <p className="text-[#ddd]">"별? 무슨 말도 안되는 소리야!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -654,6 +698,7 @@ export default function Home() {
 
         {/* 4장: 세 번째 시험 - 절망 */}
         <motion.div
+          id="chapter4"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -868,6 +913,7 @@ export default function Home() {
 
         {/* 5장: 도착 - 빛 */}
         <motion.div
+          id="chapter5"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -991,6 +1037,7 @@ export default function Home() {
 
         {/* 에필로그 */}
         <motion.div
+          id="epilogue"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1089,6 +1136,7 @@ export default function Home() {
 
         {/* 피날레 */}
         <motion.div
+          id="finale"
           className="my-16 md:my-24 bg-[#0f0f0f] border border-[#333] rounded-lg p-4 md:p-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -1114,6 +1162,7 @@ export default function Home() {
 
         {/* 연출 노트 */}
         <motion.div 
+          id="notes"
           className="mt-16 mb-8 pt-8 pb-12 px-6 bg-[#0f0f0f] border-t border-[#333]"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
