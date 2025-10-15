@@ -25,7 +25,6 @@ export default function Home() {
     { id: "해설", name: "해설", color: "#9aa0a6" },
     { id: "마을사람1", name: "마을 사람 1", color: "#ee8b60" },
     { id: "마을사람2", name: "마을 사람 2", color: "#ee8b60" },
-    { id: "마을사람3", name: "마을 사람 3", color: "#ee8b60" },
     { id: "노파", name: "노파", color: "#c58af9" },
   ];
 
@@ -37,7 +36,6 @@ export default function Home() {
     if (text.includes("해설")) return { id: "해설", color: "#9aa0a6" };
     if (text.includes("마을 사람 1") || text.includes("마을사람1")) return { id: "마을사람1", color: "#ee8b60" };
     if (text.includes("마을 사람 2") || text.includes("마을사람2")) return { id: "마을사람2", color: "#ee8b60" };
-    if (text.includes("마을 사람 3") || text.includes("마을사람3")) return { id: "마을사람3", color: "#ee8b60" };
     if (text.includes("노파")) return { id: "노파", color: "#c58af9" };
     return null;
   };
