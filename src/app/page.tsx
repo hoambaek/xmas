@@ -681,7 +681,7 @@ export default function Home() {
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            한 마을 사람이 빵을 건넨다. 아무 말 없이
+            노파가 빵을 건넨다. 아무 말 없이
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
@@ -1291,13 +1291,10 @@ export default function Home() {
                       <strong className="text-[#d4af37]">마을 사람 1 (창을 든 사람):</strong> 낯선 이들에게 경계심이 강하고 공격적이다. 한밤중에 나타난 아이들을 도둑으로 의심한다.
                     </p>
                     <p>
-                      <strong className="text-[#d4af37]">마을 사람 2, 3:</strong> 의심 많고 불신이 가득한 인물들. 아이들의 말을 쉽게 믿지 않지만 점차 설득된다.
+                      <strong className="text-[#d4af37]">마을 사람 2:</strong> 의심 많고 불신이 가득한 인물. 아이들의 말을 쉽게 믿지 않지만 점차 설득된다.
                     </p>
                     <p>
                       <strong className="text-[#d4af37]">노파 (Old Woman):</strong> 마을의 지혜로운 어르신. 과거에 자신도 순수하게 믿었던 경험이 있어 아이들의 진심을 알아본다. 부드럽고 자비로운 성격으로 아이들에게 베들레헴으로 가는 길을 알려준다. 무릎을 꿇으며 아이들의 순수함에 경의를 표한다.
-                    </p>
-                    <p>
-                      <strong className="text-[#d4af37]">빵을 건네는 마을 사람:</strong> 말없이 아이들에게 빵을 건네는 인물. 아이들의 진심에 감동받아 조용히 도움을 준다.
                     </p>
                   </div>
                 </div>
