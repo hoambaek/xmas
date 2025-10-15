@@ -107,7 +107,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium">등장인물 선택</h2>
+        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium" style={{ fontFamily: "'Diphylleia', serif" }}>등장인물 선택</h2>
         <div className="flex flex-wrap justify-center gap-3 max-w-4xl mx-auto">
           {characters.map((character) => (
             <button
@@ -152,7 +152,7 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3 }}
       >
-        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium">챕터 선택</h2>
+        <h2 className="text-2xl md:text-3xl text-[#d4af37] text-center mb-6 font-medium" style={{ fontFamily: "'Diphylleia', serif" }}>챕터 선택</h2>
         <div className="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto">
           {[
             { id: "prologue", name: "프롤로그" },
