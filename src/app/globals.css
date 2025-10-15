@@ -4,6 +4,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* Diphylleia Font */
+.diphylleia-regular {
+  font-family: "Diphylleia", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* HSBombaram21 Font - 제목용 */
 @font-face {
   font-family: 'HsBombaram21';
