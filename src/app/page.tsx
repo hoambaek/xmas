@@ -194,7 +194,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             프롤로그
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -303,7 +303,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             1장: 만남
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -456,7 +456,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             2장: 폭풍
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -553,7 +553,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             3장: 마을
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -709,7 +709,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             4장: 절망
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -924,7 +924,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             5장: 도착 - 빛
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -1048,7 +1048,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             에필로그
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
@@ -1147,7 +1147,7 @@ export default function Home() {
             <div className="w-2 h-2 rotate-45 bg-[#d4af37]"></div>
             <div className="h-px flex-1 bg-gradient-to-l from-transparent to-[#d4af37]"></div>
           </div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-center text-[#d4af37] tracking-wider">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-[#d4af37] tracking-wider diphylleia-regular">
             피날레: 합주
           </h1>
           <p className="text-center text-[#888] mt-3 text-base md:text-lg tracking-wide font-extralight">
