@@ -1364,7 +1364,7 @@ export default function Home() {
                       • 중앙 하단: 플룻 연주자 자리<br/>
                       • 양쪽: 합주단 배치 (피날레용)<br/>
                       • 후면 또는 좌우: 합창단 위치<br/>
-                      • 벽면 활용 가능 여부 확인 (그림자 투사용)
+                      
                     </p>
                   </div>
                 </div>
@@ -1476,39 +1476,83 @@ export default function Home() {
             </div>
           </div>
 
-          {/* 레퍼런스 영상 */}
+          {/* 레퍼런스 */}
           <div className="mb-4">
             <button
               onClick={() => toggleSection("reference-videos")}
               className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
             >
-              <span>그림자극 레퍼런스 영상</span>
+              <span>그림자극 레퍼런스</span>
               <span className={`transform transition-transform ${expandedSections.includes("reference-videos") ? "rotate-180" : ""}`}>
                 ▼
               </span>
             </button>
             <div
               className={`overflow-hidden transition-all duration-500 ${
-                expandedSections.includes("reference-videos") ? "max-h-[1500px] mt-4" : "max-h-0"
+                expandedSections.includes("reference-videos") ? "max-h-[2000px] mt-4" : "max-h-0"
               }`}
             >
               <div className="space-y-6">
-                <div className="bg-black rounded overflow-hidden">
-                  <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 1</p>
-                  <iframe
-                    src="https://www.youtube.com/embed/1ReuOnKSi0s"
-                    className="w-full h-64 border-0"
-                    allowFullScreen
-                  />
+                {/* 레퍼런스 이미지 */}
+                <div className="space-y-4">
+                  <h4 className="text-lg text-[#d4af37] font-medium">그림자극 레퍼런스 이미지</h4>
+                  
+                  <motion.div 
+                    className="w-full rounded overflow-hidden"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 이미지 1</p>
+                    <Image
+                      src="/s1.png"
+                      alt="그림자극 레퍼런스 1"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </motion.div>
+
+                  <motion.div 
+                    className="w-full rounded overflow-hidden"
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                  >
+                    <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 이미지 2</p>
+                    <Image
+                      src="/s2.png"
+                      alt="그림자극 레퍼런스 2"
+                      width={800}
+                      height={600}
+                      className="w-full h-auto object-contain"
+                    />
+                  </motion.div>
                 </div>
 
-                <div className="bg-black rounded overflow-hidden">
-                  <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 2</p>
-                  <iframe
-                    src="https://www.youtube.com/embed/ZrflpPulnDU"
-                    className="w-full h-64 border-0"
-                    allowFullScreen
-                  />
+                {/* 레퍼런스 영상 */}
+                <div className="space-y-4">
+                  <h4 className="text-lg text-[#d4af37] font-medium">그림자극 레퍼런스 영상</h4>
+                  
+                  <div className="bg-black rounded overflow-hidden">
+                    <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 영상 1</p>
+                    <iframe
+                      src="https://www.youtube.com/embed/1ReuOnKSi0s"
+                      className="w-full h-64 border-0"
+                      allowFullScreen
+                    />
+                  </div>
+
+                  <div className="bg-black rounded overflow-hidden">
+                    <p className="text-[#d4af37] text-sm mb-2 p-2">레퍼런스 영상 2</p>
+                    <iframe
+                      src="https://www.youtube.com/embed/ZrflpPulnDU"
+                      className="w-full h-64 border-0"
+                      allowFullScreen
+                    />
+                  </div>
                 </div>
               </div>
             </div>
