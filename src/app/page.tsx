@@ -220,71 +220,46 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            해설자 (따뜻하게 이야기하듯): "이건 아주 오래전 이야기예요. 세 명의 아이가 있었어요. 서로 다른 곳에서 온..."
+            해설자 (장난스럽게): "누구나 아시는 얘기죠. 별을 따라간 세 동방박사 이야기. 근데 이런 건 들어보셨나요? 사실 그 박사들은... 박사가 아니라 그냥 아이들이었다는 거. 후대 사람들이 그들을 '동방박사'라고 불렀지만... 사실은 세 명의 특별한 아이들이었답니다."
+          </motion.p>
+
+          <motion.p 
+            className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`}
+            style={getDialogueInlineStyle("해설")}
+          >
+            해설자: "옛날 옛적에... 아니 그냥 옛날에! (웃음) 이제 그 아이들의 이야기를 시작할까요?"
           </motion.p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            첫 번째 그림자, 발토가 천천히 등장
+            첫 번째 그림자, 발토가 어색하게 히죽거리며 등장
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "발토. 열다섯 살. 동쪽에서 왔어요. 병으로 가족을 잃었죠. 그래서 항상 웃었어요. 울면 더 슬플까봐."
+            해설자: "발토. 열다섯 살. 가족을 다 잃었는데도 맨날 웃어요. 왜냐하면요, 울면 진짜 슬퍼질 것 같아서. 그래서 그냥 계속 웃는 거죠. 근데 별을 보는 순간... '어? 저거... 엄마 아니야?' 이런 생각이 들었대요. (쓴웃음) 말도 안 되죠?"
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            발토의 그림자가 하늘을 올려다본다
+            두 번째 그림자, 카스퍼가 두툼한 책을 들고 비틀거리며 등장, 별을 보고 황급히 두루마리를 펼친다
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "어느 날 밤, 이상한 별을 봤어요. 그 별 속에 엄마가 있을 것 같았어요."
+            해설자: "카스퍼. 열네 살. 학자 아들. 전형적인 '아는 척' 타입이에요. '신? 어디 있는데? 보여줘봐!' (한숨) 친구요? 당연히 없죠. 근데 말이죠... 이 친구가 별을 딱 보는 순간! 아무것도 모르지만 심장이 '쿵!' 뛰었대요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            두 번째 그림자, 카스퍼가 책을 들고 등장
+            세 번째 그림자, 밀로가 플룻을 꼭 껴안고 조심스럽게 등장. 별을 보고 걸음을 멈춘다
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "카스퍼. 열네 살. 서쪽에서 왔어요. 학자의 아들이었어요. 머리는 좋았지만... 신을 믿지 않았죠. 증명할 수 없으니까."
+            해설자: "밀로. 열세 살. 말을 안 해요. 무서워서요. 전쟁으로 모든 걸 잃었거든요. 아빠가 만들어준 플룻만 꼭 안고 다니죠. 천재 연주자지만... 한 번도 불어본 적 없어요. (한숨) 아이러니하죠? 근데 저 별을 보는 순간... 처음으로 말하고 싶어졌대요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            카스퍼가 별을 보고 두루마리를 펼친다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "그런데 그 별을 보는 순간... 가슴이 뛰었어요. 이유는 몰랐지만."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 번째 그림자, 밀로가 천천히 등장. 플룻을 들고 있다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "밀로. 열세 살. 북쪽에서 왔어요. 가장 어렸어요. 전쟁 때문에 집을 잃었고, 말을 잃었죠. 무서웠거든요. 말하는 게."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 별을 보고 걸음을 멈춘다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "하지만 아버지가 남겨주신 유품만은... 손에서 놓지 않았어요. 그게 마지막 선물이었거든요."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 플룻을 가슴에 안는다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "그 별을 보는 순간... 뭔가 말해야 할 것 같았어요."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 중앙에서 만난다
+            세 그림자가 중앙에서 만난다. 서로를 의식하며 어색하게
           </div>
 
           <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight">
-            해설자: "그렇게... 세 아이가 만났어요. 별 아래서."
+            해설자: "그렇게... 완전히 다른 세 아이가 별 하나 때문에 만났어요. (웃음) 이게 운명이라는 건가요?"
           </p>
         </motion.div>
 
@@ -330,114 +305,63 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 서로를 발견하고 놀란다. 잠시 경계
+            세 그림자가 서로를 발견하고 화들짝 놀란다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (밝게, 하지만 어색하게):</p>
-            <p className="text-[#ddd]">"어... 너희도? 저 별 때문에 여기 온 거야?"</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            카스퍼가 고개를 끄덕인다. 경계는 풀지 않고
+            <p className="text-[#f5d576] font-medium mb-2">발토 (급작스레 멈추며, 어이없어):</p>
+            <p className="text-[#ddd]">"어?! 뭐야... 너희도 여기 있어? (별을 가리키며) 저 별 때문이야? 나만 이상한 게 아니구나!"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"별의 궤도가 이상해. 계산이 안 맞아. 근데..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (안경 치켜올리며):</p>
+            <p className="text-[#ddd]">"저 별... 천문학적으로 말이 안 돼. 근데 마치... '이리 와!' 하고 날 부르는 것 같았어. (당황) ...내가 지금 뭐라고 한 거야?"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-            <p className="text-[#ddd]">"근데?"</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (망설이며):</p>
-            <p className="text-[#ddd]">"...저 별이 뭔가를 말하는 것 같았어. 마치... 누군가 태어났다고. 아주 특별한..."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (천천히):</p>
-            <p className="text-[#ddd]">"나도... 그냥 가야 할 것 같았어. 왜인지 모르겠는데... 저 별 아래 누군가 기다리는 것 같아. 엄마가 말했던... 모두를 안아줄 수 있는 사람이..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (진지해지며):</p>
+            <p className="text-[#ddd]">"나도 그랬어. 저 별 보는 순간... 엄마 느낌이 났어. (목이 메어) 이상하게 들리지? 근데... 진짜였어."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로는 말없이 별을 가리킨다. 플룻을 들고
+            밀로가 말없이 별을 가리킨다. 세 아이가 잠시 침묵한다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (밀로에게):</p>
-            <p className="text-[#ddd]">"너는? ...말 안 하는 거야?"</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 고개를 젓는다. 입술이 떨리지만 말이 나오지 않는다. 대신 플룻을 가슴에 꼭 안는다
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            잠시 침묵. 발토가 밀로를 바라본다
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (작게, 밀로를 보며):</p>
-            <p className="text-[#ddd]">"괜찮아... 엄마가 그러셨어. 언젠가 이 슬픔이 끝날 거라고..."</p>
+            <p className="text-[#ddd]">"너는... 말 안 하는 스타일? (밀로가 고개 젓자, 웃음이 사라지며) ...괜찮아. 나도 사실 말하면 울 것 같아서... 계속 웃는 거야."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"말이 안 돼. 하지만... 저 별은 거짓말하지 않아. 뭔가... 우리를 부르고 있어."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-            <p className="text-[#ddd]">"무서워?"</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"...응. 뭘 만나게 될지 몰라서."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (쓴웃음):</p>
-            <p className="text-[#ddd]">"나도. 근데... 가지 않으면... 평생 궁금할 것 같아."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (혼잣말):</p>
+            <p className="text-[#ddd]">"별이 사람을 부를 수 없어. 근데... 왜 나는 여기 있지? 왜 가슴이 뛰지?"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
             잠시 침묵. 세 아이가 서로를 바라본다
           </div>
 
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (천천히):</p>
-            <p className="text-[#ddd]">"저 별이 계속 앞서가고 있어. 우리를... 어디론가..."</p>
-          </div>
-
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (손을 내밀며):</p>
-            <p className="text-[#ddd]">"그럼... 함께 가볼까? 끝까지?"</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (손 내밀며):</p>
+            <p className="text-[#ddd]">"무섭지만... 같이 갈래? 혼자보단 셋이 낫잖아."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
             <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (손을 맞잡으며):</p>
-            <p className="text-[#ddd]">"이유는 모르겠지만... 이건 우연이 아닌 것 같아."</p>
+            <p className="text-[#ddd]">"말이 안 되는데... 맞는 것 같기도 하고..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 조용히 손을 내밀어 두 사람의 손을 맞잡는다. 말없이 고개를 끄덕인다
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 손을 맞잡고 별을 올려다본다
+            밀로가 손을 내밀어 두 사람의 손 위에 포갠다. 처음으로 작게 미소 짓는다
           </div>
 
           <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">함께 (작게, 거의 속삭이듯):</p>
-            <p className="text-[#ddd]">"가보자..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">함께:</p>
+            <p className="text-[#ddd]">"가보자!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 천천히 별을 향해 걷기 시작한다
+            세 그림자가 손을 맞잡고 별을 향해 걷기 시작한다
           </div>
         </motion.div>
 
@@ -483,58 +407,68 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            무대가 어두워진다. 바람 소리, 격렬한 그림자 움직임<br/>세 아이의 그림자가 폭풍에 휘청인다
+            무대가 어두워진다. 격렬한 바람 소리<br/>세 아이의 그림자가 폭풍에 휘청이며 비틀거린다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (소리치며):</p>
-            <p className="text-[#ddd]">"못 가겠어... 손가락이 안 움직여!"</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            발토의 그림자가 쓰러진다
+            <p className="text-[#f5d576] font-medium mb-2">발토 (바람에 떠밀리며):</p>
+            <p className="text-[#ddd]">"이거 뭐야?! 진짜 폭풍이잖아!"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (다가가며):</p>
-            <p className="text-[#ddd]">"일어나! 여기 있으면 얼어 죽어!"</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
-            <p className="text-[#ddd]">"몰라... 엄마 생각나... 나 진짜 혼자야... 완전히..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (소리치며):</p>
+            <p className="text-[#ddd]">"풍속이... 초속 20미터가 넘어요! 위험해요!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 조용히 자신의 옷을 벗어 발토에게 덮어준다
+            발토의 그림자가 그대로 쓰러진다
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (쓰러지며, 힘없이):</p>
+            <p className="text-[#ddd]">"미안... 못 가겠어... 다리에... 힘도 없어..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (놀라며):</p>
-            <p className="text-[#ddd]">"미쳤어? 넌 어떡하려고!"</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 고개를 젓고 카스퍼의 손을 잡아 발토에게 이끈다<br/>세 그림자가 서로를 감싼다. 격렬한 움직임에서 천천히 하나의 큰 그림자로
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (다급하게):</p>
+            <p className="text-[#ddd]">"발토야! 일어나! 여기 있으면 얼어버려요!"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 목소리):</p>
-            <p className="text-[#ddd]">"...따뜻하다."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며, 처음으로 웃지 않고):</p>
+            <p className="text-[#ddd]">"엄마... 엄마 생각나... 나... 진짜 혼자구나... 완전히..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 아무 말 없이 자신의 옷을 벗어 발토에게 덮어준다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (작게):</p>
-            <p className="text-[#ddd]">"...혼자 아니잖아. 우린."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (놀라 소리치며):</p>
+            <p className="text-[#ddd]">"밀로야! 너 지금 뭐 하는 거야! 넌 어떡하려고!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            폭풍이 점점 잦아든다. 별빛이 다시 보인다
+            밀로가 고개를 젓고 카스퍼의 손을 잡아 발토에게 이끈다<br/>세 그림자가 서로를 꼭 감싼다. 격렬하게 흩어지던 그림자들이 천천히 하나의 큰 그림자로 합쳐진다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며, 웃으며):</p>
-            <p className="text-[#ddd]">"계속... 갈 수 있을 것 같아."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 목소리로):</p>
+            <p className="text-[#ddd]">"따뜻해... 진짜... 따뜻하다..."</p>
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (작게, 떨리며):</p>
+            <p className="text-[#ddd]">"혼자 아니잖아... 우린... 셋이잖아..."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            폭풍이 점점 잦아든다. 별빛이 다시 나타난다
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (천천히 일어서며, 다시 미소 지으며):</p>
+            <p className="text-[#ddd]">"고마워... 진짜로. 이제... 갈 수 있을 것 같아."</p>
           </div>
         </motion.div>
 
@@ -580,118 +514,140 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            어두운 마을. 위협적인 그림자들이 사방에서 나타난다
+            어두운 마을. 갑자기 여러 그림자들이 사방에서 튀어나온다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (창을 든 그림자):</p>
-            <p className="text-[#ddd]">"거기 멈춰!"</p>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (창을 들고 위협적으로):</p>
+            <p className="text-[#ddd]">"야! 거기 멈춰! 손들어!"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
-            <p className="text-[#ddd]">"한밤중에 애들이? 도둑놈들이구만!"</p>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2 (의심하며):</p>
+            <p className="text-[#ddd]">"한밤중에 애들이 셋이나? 백프로 도둑이다!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 움찔한다
+            세 아이가 화들짝 놀라 뒤로 물러선다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (손을 들며):</p>
-            <p className="text-[#ddd]">"아니에요! 그냥 지나가는 중이었어요..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (양손 번쩍 들며, 오버하게 웃으며):</p>
+            <p className="text-[#ddd]">"와와와! 완전 오해세요! 우리 도둑 아니에요! (너무 밝게) 우린 그냥... 여행객! 맞아, 관광! 한밤중 관광! ...요즘 대세잖아요? 야간 관광?"</p>
           </div>
 
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람3")}`} style={getDialogueInlineStyle("마을사람3")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
-            <p className="text-[#ddd]">"한밤중에 지나간다고? 믿을 수 있나!"</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2 (어이없어하며):</p>
+            <p className="text-[#ddd]">"한밤중에 관광? 애들이 셋이나 떼거지로 돌아다녀? 이거 백 퍼센트 도둑이야!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            마을 사람들이 점점 다가온다. 긴장
+            마을 사람들이 점점 다가온다. 발토가 계속 웃으려 하지만 떨린다. 카스퍼는 땀을 뻘뻘 흘린다
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            카스퍼가 천천히 머리 가발 같은 것을 벗는다. 진지한 표정
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (앞으로 나서며):</p>
-            <p className="text-[#ddd]">"저희는 학자입니다! 저 별을 관측하러..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (진지하게, 목소리를 낮춰):</p>
+            <p className="text-[#ddd]">"사실은... 저희는 동방박사입니다. 별을 따라서..."</p>
           </div>
 
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (비웃으며):</p>
-            <p className="text-[#ddd]">"별? 무슨 말도 안되는 소리야!"</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (카스퍼의 머리를 툭 치며, 당황해서):</p>
+            <p className="text-[#ddd]">"야! 너 무슨 말하는 거야! 정신차려!"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 갑자기 앞으로 나선다. 모두가 멈춘다
+            카스퍼가 당황하며 바로 가발을 다시 쓴다. 어리둥절한 표정
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (멍하니, 실수했단 표정으로):</p>
+            <p className="text-[#ddd]">"아... 저, 저희는... 그냥 야간 관광 중이에요! 맞아요! 야간 관광!"</p>
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (더 크게 웃으며):</p>
+            <p className="text-[#ddd]">"야간 관광? 동방박사? 뭐 이거 완전 이상한 애들이네! 정신차렸다가 또 바뀌네!"</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로가 갑자기 앞으로 걸어 나간다. 발토와 카스퍼가 놀라 쳐다본다. 모두가 동작을 멈춘다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로 (작지만 분명하게):</p>
-            <p className="text-[#ddd]">"...왕이 있어요."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (작지만 또렷하게, 처음으로 입을 열며):</p>
+            <p className="text-[#ddd]">"...왕이... 태어나셨어요."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            침묵
+            세상이 멈춘 듯한 정적. 바람 소리조차 사라진다. 발토와 카스퍼가 밀로를 경악한 표정으로 바라본다
+          </div>
+
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (속삭이듯, 놀라서):</p>
+            <p className="text-[#ddd]">"...밀로... 네가... 말을..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람2")}`} style={getDialogueInlineStyle("마을사람2")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2:</p>
-            <p className="text-[#ddd]">"뭐라고?"</p>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 2 (당황하며):</p>
+            <p className="text-[#ddd]">"...왕? 어, 어디에?"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 별을 가리키며 고개를 끄덕인다
+            밀로가 떨리는 손으로 별을 가리킨다. 눈빛이 확고하다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("마을사람1")}`} style={getDialogueInlineStyle("마을사람1")}>
-            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1:</p>
-            <p className="text-[#ddd]">"무슨 헛소리야!"</p>
+            <p className="text-[#ee8b60] font-medium mb-2">마을 사람 1 (비웃으려다 멈추며):</p>
+            <p className="text-[#ddd]">"별 속에... 왕이? 그, 그게 무슨..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            노파의 그림자가 천천히 앞으로
+            노파의 그림자가 천천히 앞으로 나온다. 밀로를 뚫어지게 바라본다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("노파")}`} style={getDialogueInlineStyle("노파")}>
-            <p className="text-[#c58af9] font-medium mb-2">노파 (부드럽게):</p>
-            <p className="text-[#ddd]">"기다려봐. 너희들, 진심이구나?"</p>
+            <p className="text-[#c58af9] font-medium mb-2">노파 (부드럽게, 하지만 단호하게 손을 들어 제지하며):</p>
+            <p className="text-[#ddd]">"조용히 하거라. (밀로를 바라보며) ...얘야, 너... 지금 말을 한 거니?"</p>
           </div>
 
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (고개를 끄덕이며):</p>
-            <p className="text-[#ddd]">"엄마가요... 돌아가시기 전에 그러셨어요. 세상에 아직 사랑이 남아있다고. 저는... 그게 정말인지 보고 싶었어요."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"전 안 믿었어요. 근데 이 별을 보는 순간... 뭔가 있을지도 모른다는 생각이 들었어요."</p>
+          <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (고개를 끄덕이며):</p>
+            <p className="text-[#ddd]">"...네. 왜냐면... 진짜니까요. 너무 진짜라서... 말 안 하면 안 될 것 같았어요."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 입을 열려 하지만 말이 나오지 않는다. 눈물만 흐른다
+            발토와 카스퍼가 밀로를 보며 서로를 힐끔 바라본다
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            긴 침묵. 노파가 무릎을 꿇는다
+            밀로가 입을 열려 하지만 더 이상 말이 안 나온다. 눈물만 조용히 흐른다. 플룻을 꼭 안는다
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            아주 긴 침묵. 노파가 천천히, 천천히 무릎을 꿇는다. 마을 사람들이 숨을 죽인다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("노파")}`} style={getDialogueInlineStyle("노파")}>
-            <p className="text-[#c58af9] font-medium mb-2">노파:</p>
-            <p className="text-[#ddd]">"...나도 너희만큼 어렸을 때 그랬단다. 순수하게 믿었지." 일어서며 "동쪽으로 가거라. 베들레헴."</p>
+            <p className="text-[#c58af9] font-medium mb-2">노파 (눈물을 흘리며, 떨리는 목소리로):</p>
+            <p className="text-[#ddd]">"나도... 너희만큼 어렸을 때... 그렇게 순수하게... 믿었단다. 하지만... 세월이 흐르면서... 잊어버렸구나. (천천히 일어서며) 동쪽으로 가거라. 베들레헴. (확신에 차서) 그곳에... 너희가 찾는 분이... 기다리고 계실 거야."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            노파가 빵을 건넨다. 아무 말 없이
+            노파가 품에서 빵을 꺼내 건넨다. 아무 말 없이
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (빵을 받으며):</p>
-            <p className="text-[#ddd]">"...감사합니다."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (떨리는 손으로 빵을 받으며):</p>
+            <p className="text-[#ddd]">"감사합니다... 정말로..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            마을 사람들이 천천히 길을 열어준다
-        </div>
+            마을 사람들이 천천히 길을 열어준다. 아무 말 없이
+          </div>
         </motion.div>
 
         {/* 4장: 세 번째 시험 - 절망 */}
@@ -736,45 +692,26 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            끝없는 길. 세 그림자의 움직임이 극도로 느려진다
+            끝없는 길. 세 그림자가 하나씩 쓰러진다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
             <p className="text-[#f5d576] font-medium mb-2">발토 (쓰러지며):</p>
-            <p className="text-[#ddd]">"안 돼... 다리에 힘이..."</p>
+            <p className="text-[#ddd]">"안 돼... 다리가 안 움직여..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
             <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (주저앉으며):</p>
-            <p className="text-[#ddd]">"며칠째야... 대체 며칠째..."</p>
+            <p className="text-[#ddd]">"내가 맞았어... 신 같은 건 없어. 우린 바보들이야..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로도 무릎을 꿇는다. 긴 침묵
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (쓴웃음):</p>
-            <p className="text-[#ddd]">"내 말이 맞았어. 신 같은 건 없어. 우린 그냥... 꿈 꾼 바보들이야."</p>
+            밀로도 무릎을 꿇는다. 별빛마저 희미해진다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (울먹이며):</p>
-            <p className="text-[#ddd]">"엄마... 미안해... 나..."</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            더 긴 침묵. 별빛마저 희미해진다
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (흐느끼며):</p>
-            <p className="text-[#ddd]">"집에 가고 싶어... 그냥 집에..."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (고개를 숙이며):</p>
-            <p className="text-[#ddd]">"집... 어디가 집인지도 모르겠어..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (처음으로 진짜 울음을 터뜨리며):</p>
+            <p className="text-[#ddd]">"엄마... 미안해... 집에 가고 싶어..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -782,130 +719,91 @@ export default function Home() {
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (힘없이):</p>
             <p className="text-[#ddd]">"...밀로?"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 플룻을 입에 댄다
+            밀로가 천천히 플룻을 입에 댄다. 눈을 감는다
           </div>
 
           <motion.div 
-            className="text-[#d4af37] font-medium my-8 p-4 bg-[#1a1a1a] border-l-4 border-[#d4af37] text-center text-lg"
+            className="text-[#d4af37] font-medium my-8 p-6 bg-gradient-to-r from-[#1a1a1a] via-[#2a2a2a] to-[#1a1a1a] border-l-4 border-[#d4af37] text-center text-xl"
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            [플룻 연주 - 1분]
+            [ 플룻 독주 - 1분 ]<br/>
+            <span className="text-sm text-[#999] block mt-2">밀로가 아버지를 향해, 친구들을 향해, 그리고 잃어버린 모든 것들을 향해 연주한다</span>
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            부드럽고 슬픈 플룻 선율이 시작된다. 밀로의 그림자가 커지고, 세 아이 뒤로 잃어버린 가족들의 희미한 형상이 나타났다 사라진다. 음악이 슬픔에서 희망으로 변하며, 별빛만 더욱 밝게 남는다.
+            부드럽고 애절한 플룻 선율이 어둠을 가른다. 밀로의 그림자가 점점 커지고, 세 아이 뒤로 잃어버린 가족들의 희미한 형상이 천천히 나타났다가 사라진다. 엄마의 미소, 아버지의 손, 함께했던 순간들... 음악이 슬픔에서 시작해 위로로, 그리고 희망으로 변해간다. 별빛이 점점 더 밝게 빛난다.
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            긴 침묵
+            긴 침묵. 마지막 선율이 사라진다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며, 떨리는 목소리):</p>
-            <p className="text-[#ddd]">"너무... 아름다웠어..."</p>
-          </div>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 고개를 끄덕인다. 플룻을 가슴에 안는다
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (목이 메어):</p>
-            <p className="text-[#ddd]">"너... 한 번도 안 불었잖아..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물 흘리며):</p>
+            <p className="text-[#ddd]">"밀로야... 너무... 아름다웠어..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로 (작게):</p>
-            <p className="text-[#ddd]">"...무서웠어. 불면... 울 것 같았거든."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-            <p className="text-[#ddd]">"울어도 돼. 우리가 옆에 있자나."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (작게, 떨리며):</p>
+            <p className="text-[#ddd]">"무서웠어... 불면 울 것 같아서. 근데 아빠가 그랬어. 이 플룻은... 누군가 힘들 때... 위로하려고 부는 거라고. 그게 사랑이라고..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 눈물을 흘린다. 처음으로
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로 (울먹이며):</p>
-            <p className="text-[#ddd]">"아빠가... 그랬어. 이 악기는... 슬플 때 부는 게 아니라... 누군가 힘들 때 위로하려고 부는 거라고..."</p>
+            밀로가 처음으로 눈물을 흘린다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
             <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (일어서며):</p>
-            <p className="text-[#ddd]">"...위로됐어. 진짜로."</p>
+            <p className="text-[#ddd]">"위로됐어... 처음으로... 누군가 날 위로해 줬어..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며):</p>
-            <p className="text-[#ddd]">"나도... 엄마가... 들었을 것 같아."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (일어서며, 미소로):</p>
+            <p className="text-[#ddd]">"엄마도... 들었을 것 같아..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로가 천천히 일어선다
+            밀로가 일어선다. 세 아이가 서로를 바라본다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로:</p>
-            <p className="text-[#ddd]">"우리... 바보 아니야."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"응?"</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로:</p>
-            <p className="text-[#ddd]">"폭풍 속에서... 따뜻했잖아. 마을에서... 빵도 받았잖아. 지금... 위로도 받았고. 그게... (손가락으로 가슴을 가리키며) "여기 있어."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (또렷하게, 가슴을 가리키며):</p>
+            <p className="text-[#ddd]">"우리... 바보 아니야. 폭풍 속에서 서로를 감싸줬잖아. 마을에서 빵도 받았잖아. 지금 위로도 받았고. (가슴을 꾹 누르며) 다... 여기 있어."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (천천히 일어서며):</p>
-            <p className="text-[#ddd]">"맞아... 엄마도 여기 계셔..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (가슴에 손, 깨닫듯):</p>
+            <p className="text-[#ddd]">"맞아... 엄마도 여기 계셨어..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (떨리는 목소리):</p>
-            <p className="text-[#ddd]">"우리가... 찾던 게..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (감격하며):</p>
+            <p className="text-[#ddd]">"우리가 찾던 게... 처음부터..."</p>
           </div>
 
           <div className="my-6 text-base leading-loose">
             <p className="text-[#f5d576] font-medium mb-2">함께:</p>
-            <p className="text-[#ddd]">"여기 있었네."</p>
+            <p className="text-[#ddd]">"...여기 있었어."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 서로를 부축하며 일어선다
+            세 아이가 껴안는다. 하나의 그림자가 된다
           </div>
 
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-            <p className="text-[#ddd]">"끝까지?"</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"끝까지."</p>
-          </div>
-
-          <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로:</p>
-            <p className="text-[#ddd]">"같이."</p>
+          <div className="my-6 text-base leading-loose">
+            <p className="text-[#f5d576] font-medium mb-2">발토: "끝까지?" / 카스퍼: "끝까지." / 밀로: "같이."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            그 순간, 별이 다시 환하게 빛난다
+            별이 환하게 빛난다. 세 그림자가 빛 속으로 걸어간다
           </div>
         </motion.div>
 
@@ -951,85 +849,89 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            따뜻한 빛이 무대를 채운다. 말구유의 형상
+            따뜻하고 부드러운 빛이 천천히 무대를 가득 채운다. 말구유의 형상이 나타난다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (숨을 죽이며):</p>
-            <p className="text-[#ddd]">"...저기다."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (숨을 죽이며, 떨리는 목소리로):</p>
+            <p className="text-[#ddd]">"...저기... 저기야..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 천천히 무릎을 꿇는다
+            세 아이가 천천히, 조심스럽게 무릎을 꿇는다. 고개를 숙인다
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            발토가 황금을 바친다<br/>
-            카스퍼가 유향을 바친다<br/>
-            밀로가... 플룻을 내려놓으려 한다
+            발토가 떨리는 손으로 황금을 내려놓는다<br/>
+            카스퍼가 유향을 조심스럽게 바친다<br/>
+            밀로가... 천천히 플룻을 내려놓으려 한다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
-            <p className="text-[#ddd]">"밀로... 그건 네 아버지의..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (놀라며 밀로를 보며):</p>
+            <p className="text-[#ddd]">"밀로... 그건... 네 아버지가..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로 (미소 지으며):</p>
-            <p className="text-[#ddd]">"괜찮아. 아빠가 만들어주신 건... 이 순간을 위한 거였던 것 같아."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (평온한 미소로):</p>
+            <p className="text-[#ddd]">"괜찮아... 이제 알 것 같아. 아빠가... 이걸 만들어주신 이유. 이 순간을 위해서였던 거야. 사랑을... 나눠주라고..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 아기를 바라본다. 긴 침묵<br/>음악만 흐른다
+            세 아이가 아기를 바라본다. 아주 긴 침묵<br/>부드러운 음악만이 흐른다
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물을 닦으며):</p>
-            <p className="text-[#ddd]">"이렇게... 작은데..."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (눈물이 흐르며, 경이로움에 차서):</p>
+            <p className="text-[#ddd]">"이렇게... 작고... 연약한데... 어떻게... 이렇게... 따뜻할 수가..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (경외하며):</p>
-            <p className="text-[#ddd]">"이렇게... 밝네..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (목이 메어, 경외하며):</p>
+            <p className="text-[#ddd]">"별보다... 더 밝아... 이렇게... 작은데... 온 세상을 비추는 것 같아..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로 (미소 지으며):</p>
-            <p className="text-[#ddd]">"...예쁘다."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (환한 미소로, 눈물을 흘리며):</p>
+            <p className="text-[#ddd]">"...아름다워... 정말... 아름다워..."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 아기를 바라본다. 한참 후
+            세 아이가 계속 아기를 바라본다. 시간이 멈춘 듯한 순간
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토 (작게):</p>
-            <p className="text-[#ddd]">"우리... 잘 찾아온 거지?"</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (작게, 떨리며):</p>
+            <p className="text-[#ddd]">"우리... 정말... 잘 찾아온 거 맞지?"</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"응... 잘 찾아왔어."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (확신에 차서):</p>
+            <p className="text-[#ddd]">"응... 우린... 정말 잘 찾아왔어... 이게... 우리가 찾던 거였어..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("밀로")}`} style={getDialogueInlineStyle("밀로")}>
-            <p className="text-[#81c995] font-medium mb-2">밀로:</p>
-            <p className="text-[#ddd]">"이제... 돌아가야겠다."</p>
+            <p className="text-[#81c995] font-medium mb-2">밀로 (천천히):</p>
+            <p className="text-[#ddd]">"이제... 돌아가야겠다... 사람들에게... 이야기해줘야 해..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
-            <p className="text-[#f5d576] font-medium mb-2">발토:</p>
-            <p className="text-[#ddd]">"응."</p>
+            <p className="text-[#f5d576] font-medium mb-2">발토 (고개를 끄덕이며):</p>
+            <p className="text-[#ddd]">"응... 우리가... 여기서 본 걸..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
-            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼:</p>
-            <p className="text-[#ddd]">"근데..."</p>
+            <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (서로를 바라보며):</p>
+            <p className="text-[#ddd]">"근데... 우린..."</p>
           </div>
 
           <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">함께:</p>
-            <p className="text-[#ddd]">"우린... 다른 사람이 되어 돌아갈 거야."</p>
+            <p className="text-[#f5d576] font-medium mb-2">함께 (서로의 손을 잡으며, 확신에 차서):</p>
+            <p className="text-[#ddd]">"...이미 다른 사람이 되었어."</p>
+          </div>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            세 아이가 마지막으로 아기에게 고개를 숙인다. 빛이 더욱 밝아진다
           </div>
         </motion.div>
 
@@ -1075,15 +977,15 @@ export default function Home() {
           </motion.div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 천천히 변한다. 성장한 모습으로
+            세 그림자가 천천히 변한다. 키가 크고, 자세가 당당한 어른의 모습으로
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "그날 밤 이후... 세 아이는 어른이 되어 돌아갔어요. 각자의 땅으로."
+            해설자: "그날 밤 이후... 세 아이는 완전히 달라졌어요. 아니, 정확히는... (잠시) 진짜 자신을 찾았다고 해야 할까요? 그들은 어른이 되어 각자의 땅으로 돌아갔어요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 그림자가 서로 다른 방향으로
+            세 그림자가 서로를 마지막으로 바라보며 각자의 길로 걸어간다. 아주 느리게
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
@@ -1091,44 +993,40 @@ export default function Home() {
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            밀로의 그림자가 플룻을 부는 형상
+            밀로의 그림자가 플룻을 들어 올린다. 조용히 연주를 시작한다
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "밀로는 평생 플룻을 불었답니다. 힘든 사람들을 위로하며."
+            해설자: "밀로는... 평생 플룻을 불었답니다. (잠시 멈춤) 이제는 무서워하지 않았죠. 힘든 사람들을 위로하며... 위로하며..."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            무대가 점점 밝아진다
+            무대가 천천히 밝아진다. 플룻 소리가 조용히 흐른다
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "사람들은 물었어요. '정말 신을 봤느냐'고."
+            해설자: "사람들이 물었어요. '정말 신을 봤느냐'고."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
             세 그림자가 동시에 가슴을 가리킨다
           </div>
 
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "세 사람은 이렇게 대답했답니다."
-          </p>
-
           <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">함께 (마지막으로):</p>
-            <p className="text-[#ddd]">"신은... 멀리 계시지 않았어요. 여기 계셨어요." (서로를 가리킨다) "우리 안에."</p>
+            <p className="text-[#f5d576] font-medium mb-2">함께 (확신에 차서):</p>
+            <p className="text-[#ddd]">"신은... (가슴을 가리키며) 여기 계셨어요. 우리 안에."</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            무대 전체가 빛으로 가득 찬다<br/>희미하게 플룻 선율이 다시 들린다
+            무대 전체가 따뜻한 빛으로 가득 찬다<br/>플룻 선율이 천천히 커진다
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (속삭이듯): "우리는... 별을 따랐습니다."
+            해설자 (조용히, 관객을 향해): "별을 따랐습니다. 그리고 여러분도... 언젠가... 자신의 별을 따르게 될 거예요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            하나의 별빛과 플룻 소리만 남기고 암전
+            하나의 밝은 별빛과 플룻 소리만 남기고 천천히 암전
           </div>
         </motion.div>
 
@@ -1472,6 +1370,68 @@ export default function Home() {
                     • 피날레는 관객에게 남는 마지막 인상 → 완벽한 준비 필수
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 무대구성 */}
+          <div className="mb-4">
+            <button
+              onClick={() => toggleSection("stage-setup")}
+              className="w-full bg-[#1a1a1a] text-[#d4af37] border border-[#333] p-4 text-left rounded font-normal text-base transition-colors hover:bg-[#222] flex justify-between items-center"
+            >
+              <span>무대 구성</span>
+              <span className={`transform transition-transform ${expandedSections.includes("stage-setup") ? "rotate-180" : ""}`}>
+                ▼
+              </span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-500 ${
+                expandedSections.includes("stage-setup") ? "max-h-[2000px] mt-4" : "max-h-0"
+              }`}
+            >
+              <div className="space-y-4">
+                <h4 className="text-lg text-[#d4af37] font-medium">무대 구성도</h4>
+                
+                <motion.div 
+                  className="w-full rounded overflow-hidden"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <p className="text-[#d4af37] text-sm mb-2 p-2">무대 구성도 1</p>
+                  <div className="w-full flex justify-center items-center bg-black/20 p-4 rounded">
+                    <Image
+                      src="/22.png"
+                      alt="무대 구성도"
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto max-w-full object-contain"
+                      style={{ maxHeight: '80vh' }}
+                    />
+                  </div>
+                </motion.div>
+
+                <motion.div 
+                  className="w-full rounded overflow-hidden"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                  <p className="text-[#d4af37] text-sm mb-2 p-2">무대 구성도 2</p>
+                  <div className="w-full flex justify-center items-center bg-black/20 p-4 rounded">
+                    <Image
+                      src="/23.png"
+                      alt="무대 구성도 2"
+                      width={1200}
+                      height={800}
+                      className="w-full h-auto max-w-full object-contain"
+                      style={{ maxHeight: '80vh' }}
+                    />
+                  </div>
+                </motion.div>
               </div>
             </div>
           </div>
