@@ -1228,7 +1228,7 @@ export default function Home() {
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "그날 밤 이후 세 아이는 완전히 달라졌어요. 아니... 정확히는 (잠시) 진짜 자신을 찾았다고 해야 할까요? 그들은 어른이 되어 각자의 땅으로 돌아갔어요."
+            해설자: "그날 밤 이후... 세 아이는 완전히 달라졌어요. 아니, 정확히는... (잠시) 진짜 자신을 찾았다고 해야 할까요? 그들은 어른이 되어 각자의 땅으로 돌아갔어요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -1236,7 +1236,23 @@ export default function Home() {
           </div>
 
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자: "그리고 이야기했죠. 별을 따라간 이야기를. 빛을 만난 이야기를. 사람들이 물었어요. '정말 신을 봤느냐'고."
+            해설자: "그리고 이야기했죠. 별을 따라간 이야기를. 빛을 만난 이야기를."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            밀로의 그림자가 플룻을 들어 올린다. 조용히 연주를 시작한다
+          </div>
+
+          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
+            해설자: "밀로는... 평생 플룻을 불었답니다. (잠시 멈춤) 이제는 무서워하지 않았죠. 힘든 사람들을 위로하며... 위로하며..."
+          </p>
+
+          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
+            무대가 천천히 밝아진다. 플룻 소리가 조용히 흐른다
+          </div>
+
+          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
+            해설자: "사람들이 물었어요. '정말 신을 봤느냐'고."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
@@ -1252,41 +1268,8 @@ export default function Home() {
             무대 전체가 따뜻한 빛으로 가득 찬다<br/>플룻 선율이 천천히 커진다
           </div>
 
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            해설자가 천천히 관객석을 향해 걸어 나온다. 무대와 객석 사이의 경계에 선다
-          </div>
-
           <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (조용히, 관객을 향해): "별을 따랐습니다. 세 아이는... 별을 따라 길을 걸었죠."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            잠시 침묵. 해설자가 관객 한 명 한 명을 바라본다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (부드럽지만 강렬하게): "여러분도... 언젠가 자신의 별을 따르게 될 거예요. 어둠 속에서 빛나는 별... 그 별을 따라... 먼 길을 걸어가겠죠."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            뒤에서 세 아이의 그림자가 다시 나타난다. 관객을 바라본다
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (미소 지으며, 깨달음을 전하듯): "하지만 알게 될 거예요. (한 박자 쉬고) 그 별을 따라가는 동안... 여러분 곁에 있던 사람들이... 바로 여러분의 별이었다는 걸."
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            세 아이가 서로의 손을 잡는다
-          </div>
-
-          <div className="my-6 text-base leading-loose">
-            <p className="text-[#f5d576] font-medium mb-2">발토, 카스퍼, 밀로 (함께, 관객을 향해):</p>
-            <p className="text-[#ddd]">"여러분도... 여러분 자신이... 누군가의 별입니다."</p>
-          </div>
-
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (마지막 말, 힘주어): "결국... 우리 모두가... 서로의 별이었어요. 그게... 이 이야기가 전하고 싶은 거예요."
+            해설자 (조용히, 관객을 향해): "별을 따랐습니다. 그리고 여러분도... 언젠가... 자신의 별을 따르게 될 거예요."
           </p>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
