@@ -1519,6 +1519,35 @@ export default function Home() {
           </div>
         </motion.div>
       </div>
+
+      {/* 버전 선택 버튼 */}
+      <motion.div
+        className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 1 }}
+      >
+        <div className="flex gap-3 bg-black/80 backdrop-blur-md border border-[#d4af37]/30 rounded-full px-6 py-3 shadow-lg">
+          <a
+            href="/"
+            className="px-5 py-2 rounded-full bg-[#d4af37] text-black font-medium hover:bg-[#f5d576] transition-all duration-300"
+          >
+            V1
+          </a>
+          <a
+            href="/v2"
+            className="px-5 py-2 rounded-full bg-white/10 text-[#d4af37] font-medium hover:bg-white/20 transition-all duration-300"
+          >
+            V2
+          </a>
+          <a
+            href="/v3"
+            className="px-5 py-2 rounded-full bg-white/10 text-[#d4af37] font-medium hover:bg-white/20 transition-all duration-300"
+          >
+            V3
+          </a>
+        </div>
+      </motion.div>
     </div>
   );
 }
