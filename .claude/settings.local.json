@@ -6,7 +6,8 @@
       "Bash(git push)",
       "Bash(git commit -m \"$(cat <<''EOF''\nfeat: 어머니 캐릭터를 등장인물 선택에 추가\n\n- 상단 등장인물 선택 부분에 \"어머니\" 캐릭터 추가\n- 프롤로그에 추가된 어머니 회상 장면의 하이라이트 지원\n- 발토와 같은 금색(#f5d576) 사용\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
       "Bash(git commit:*)",
-      "Bash(src/app/page.tsx.backup)"
+      "Bash(src/app/page.tsx.backup)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []
