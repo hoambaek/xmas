@@ -28,6 +28,24 @@ export default function Home() {
     { id: "노파", name: "노파", color: "#c58af9" },
   ];
 
+  const groupHighlightConfig: Record<string, { members: string[]; color: string }> = {
+    함께: { members: ["발토", "카스퍼", "밀로"], color: "#f5d576" },
+  };
+
+  const isDialogueHighlighted = (characterId: string) => {
+    if (!selectedCharacter) return false;
+    if (selectedCharacter === characterId) return true;
+    const group = groupHighlightConfig[characterId];
+    return group ? group.members.includes(selectedCharacter) : false;
+  };
+
+  const getHighlightColor = (characterId: string) => {
+    const char = characters.find(c => c.id === characterId);
+    if (char) return char.color;
+    const group = groupHighlightConfig[characterId];
+    return group?.color;
+  };
+
   // 캐릭터별 색상 매핑
   const getCharacterColor = (text: string) => {
     if (text.includes("발토")) return { id: "발토", color: "#f5d576" };
@@ -42,7 +60,7 @@ export default function Home() {
 
   // 대사 하이라이트 스타일 헬퍼
   const getDialogueClass = (characterId: string) => {
-    if (selectedCharacter === characterId) {
+    if (isDialogueHighlighted(characterId)) {
       return "transition-all duration-300 rounded p-3";
     }
     if (selectedCharacter) {
@@ -52,15 +70,15 @@ export default function Home() {
   };
 
   const getDialogueInlineStyle = (characterId: string) => {
-    const char = characters.find(c => c.id === characterId);
-    if (!char) return {};
-    
-    if (selectedCharacter === characterId) {
+    const color = getHighlightColor(characterId);
+    if (!color) return {};
+
+    if (isDialogueHighlighted(characterId)) {
       return {
-        backgroundColor: `${char.color}20`,
+        backgroundColor: `${color}20`,
         borderWidth: "2px",
         borderStyle: "solid",
-        borderColor: char.color,
+        borderColor: color,
       };
     }
     return {};
@@ -258,7 +276,10 @@ export default function Home() {
             세 그림자가 중앙에서 만난다. 서로를 의식하며 어색하게
           </div>
 
-          <p className="italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight">
+          <p
+            className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`}
+            style={getDialogueInlineStyle("해설")}
+          >
             해설자: "그렇게, 완전히 다른 세 아이가 별 하나 때문에 만났어요. (웃음) 이게 운명이라는 건가요?"
           </p>
         </motion.div>
@@ -355,7 +376,10 @@ export default function Home() {
             밀로가 손을 내밀어 두 사람의 손 위에 포갠다. 처음으로 작게 미소 짓는다
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div
+            className={`my-6 text-base leading-loose ${getDialogueClass("함께")}`}
+            style={getDialogueInlineStyle("함께")}
+          >
             <p className="text-[#f5d576] font-medium mb-2">함께:</p>
             <p className="text-[#ddd]">"가보자!"</p>
           </div>
@@ -789,7 +813,10 @@ export default function Home() {
             <p className="text-[#ddd]">"우리가 찾던 게... 처음부터..."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div
+            className={`my-6 text-base leading-loose ${getDialogueClass("함께")}`}
+            style={getDialogueInlineStyle("함께")}
+          >
             <p className="text-[#f5d576] font-medium mb-2">함께:</p>
             <p className="text-[#ddd]">"...여기 있었어."</p>
           </div>
@@ -925,7 +952,10 @@ export default function Home() {
             <p className="text-[#ddd]">"근데... 우린..."</p>
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div
+            className={`my-6 text-base leading-loose ${getDialogueClass("함께")}`}
+            style={getDialogueInlineStyle("함께")}
+          >
             <p className="text-[#f5d576] font-medium mb-2">함께 (서로의 손을 잡으며, 확신에 차서):</p>
             <p className="text-[#ddd]">"우린 이미 달라졌어"</p>
           </div>
@@ -1012,7 +1042,10 @@ export default function Home() {
             세 그림자가 동시에 가슴을 가리킨다
           </div>
 
-          <div className="my-6 text-base leading-loose">
+          <div
+            className={`my-6 text-base leading-loose ${getDialogueClass("함께")}`}
+            style={getDialogueInlineStyle("함께")}
+          >
             <p className="text-[#f5d576] font-medium mb-2">함께 (확신에 차서):</p>
             <p className="text-[#ddd]">"처음부터 이 안에 계셨어요"</p>
           </div>
