@@ -1014,20 +1014,13 @@ export default function Home() {
 
           <div className="my-6 text-base leading-loose">
             <p className="text-[#f5d576] font-medium mb-2">함께 (확신에 차서):</p>
-            <p className="text-[#ddd]">"여기 계셨어요 처음부터"</p>
+            <p className="text-[#ddd]">"처음부터 이 안에 계셨어요"</p>
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
             무대 전체가 따뜻한 빛으로 가득 찬다<br/>플룻 선율이 천천히 커진다
           </div>
 
-          <p className={`italic text-[#ccc] my-6 pl-4 border-l-2 border-[#444] font-extralight ${getDialogueClass("해설")}`} style={getDialogueInlineStyle("해설")}>
-            해설자 (조용히, 관객을 향해): "별을 따랐습니다. 각자의 별을 찾아"
-          </p>
-
-          <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            하나의 밝은 별빛과 플룻 소리만 남기고 천천히 암전
-          </div>
         </motion.div>
 
         {/* 피날레 */}
