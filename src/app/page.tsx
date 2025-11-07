@@ -551,7 +551,7 @@ export default function Home() {
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("카스퍼")}`} style={getDialogueInlineStyle("카스퍼")}>
             <p className="text-[#8ab4f8] font-medium mb-2">카스퍼 (진지하게, 목소리를 낮춰):</p>
-            <p className="text-[#ddd]">"저희는 별을 따라왔어요"</p>
+            <p className="text-[#ddd]">"사실은... 저희는 동방박사입니다. 별을 따라서..."</p>
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
