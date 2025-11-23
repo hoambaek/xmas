@@ -661,7 +661,7 @@ export default function Home() {
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            노파가 품에서 빵을 꺼내 건넨다. 아무 말 없이
+            노파가 품에서 빵을 꺼내 발토에게 건넨다. 아무 말 없이
           </div>
 
           <div className={`my-6 text-base leading-loose ${getDialogueClass("발토")}`} style={getDialogueInlineStyle("발토")}>
@@ -889,8 +889,8 @@ export default function Home() {
           </div>
 
           <div className="my-6 text-[#999] text-base p-4 bg-[#1a1a1a] rounded">
-            발토가 떨리는 손으로 황금을 내려놓는다<br/>
-            카스퍼가 유향을 조심스럽게 바친다<br/>
+            발토가 떨리는 손으로 빵을 내려놓는다<br/>
+            카스퍼가 책을 조심스럽게 바친다<br/>
             밀로가... 천천히 플룻을 내려놓으려 한다
           </div>
 
